@@ -1,0 +1,14 @@
+{
+    "infantry_t6": {
+        "id": "infantry_t6",
+        "type": "infantry",
+        "tier": 6,
+        "fc": 0,
+        "stats": {
+            "Attack": 243,
+            "Defense": 10,
+            "Lethality": 10,
+            "Health": 730
+        }
+    }
+}

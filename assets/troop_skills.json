@@ -1,0 +1,36 @@
+[
+    {
+        "skill_name": "Master Brawler",
+        "skill_decription": "Increase Attack Damage to Lancers by 10%",
+        "skill_type": "troop_skill",
+        "skill_default_level": 1,
+        "skill_troop_type": "infantry",
+        "skill_permanent": true,
+        "skill_lag": 0,
+        "skill_frequency": 1,
+        "skill_duration": -1,
+        "skill_stackable": false,
+        "skill_is_chance": false,
+        "skill_probability": 0.0,
+        "skill_affects_opponent": false,
+        "skill_target_type": "infantry",
+        "skill_trigger_type": "lancer",
+        "skill_type_relation": 0,
+        "skill_conditions": [
+            {
+                "condition_type": "tier",
+                "condition_value": 0
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "effect_type": "damage",
+                "effect_values": {
+                    "1": 10
+                },
+                "effect_op": "multiply"
+            }
+        ]
+    }
+]
