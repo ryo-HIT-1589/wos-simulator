@@ -103,5 +103,114 @@
                 "effect_op": "101"
             }
         ]
+    },
+    {
+        "skill_name": "Bands of Steel",
+        "skill_decription": "Increase Defense against lancers by 10%",
+        "skill_type": "troop_skill",
+        "skill_default_level": 1,
+        "skill_troop_type": "infantry",
+        "skill_permanent": true,
+        "skill_lag": 0,
+        "skill_frequency": 1,
+        "skill_duration": -1,
+        "skill_is_chance": false,
+        "skill_probability": 0.0,
+        "skill_extra_attack": false,
+        "skill_stackable": false,
+        "skill_affects_opponent": false,
+        "skill_target_type": "infantry",
+        "skill_trigger_type": "lancers",
+        "skill_type_relation": 0,
+        "skill_conditions": [
+            {
+                "condition_type": "tier",
+                "condition_value": 7
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "effect_type": "DefenseUp",
+                "effect_values": {
+                    "1": 10
+                },
+                "effect_op": "111"
+            }
+        ]
+    },
+    {
+        "skill_name": "Ambusher",
+        "skill_decription": "Attacks have a 20% chance to strike Marksmen behind Infantry",
+        "skill_type": "troop_skill",
+        "skill_default_level": 1,
+        "skill_troop_type": "lancers",
+        "skill_permanent": false,
+        "skill_lag": 0,
+        "skill_frequency": 1,
+        "skill_duration": 1,
+        "skill_is_chance": true,
+        "skill_probability": {
+            "1": 20
+        },
+        "skill_extra_attack": false,
+        "skill_stackable": false,
+        "skill_affects_opponent": false,
+        "skill_target_type": "lancers",
+        "skill_trigger_type": "marksmen",
+        "skill_type_relation": 0,
+        "skill_conditions": [
+            {
+                "condition_type": "tier",
+                "condition_value": 7
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "effect_type": "attack_order",
+                "effect_values": {
+                    "1": "mark/inf/lanc"
+                },
+                "effect_op": ""
+            }
+        ]
+    },
+    {
+        "skill_name": "Volley",
+        "skill_decription": "Attacks have a 10% chance to strike twice",
+        "skill_type": "troop_skill",
+        "skill_default_level": 1,
+        "skill_troop_type": "marksmen",
+        "skill_permanent": false,
+        "skill_lag": 0,
+        "skill_frequency": 1,
+        "skill_duration": 1,
+        "skill_is_chance": true,
+        "skill_probability": {
+            "1": 10
+        },
+        "skill_extra_attack": true,
+        "skill_stackable": false,
+        "skill_affects_opponent": false,
+        "skill_target_type": "marksmen",
+        "skill_trigger_type": "all",
+        "skill_type_relation": 1,
+        "skill_conditions": [
+            {
+                "condition_type": "tier",
+                "condition_value": 7
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "effect_type": "DamageUp",
+                "effect_values": {
+                    "1": 100
+                },
+                "effect_op": "101"
+            }
+        ]
     }
 ]

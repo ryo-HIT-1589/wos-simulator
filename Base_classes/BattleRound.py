@@ -1,5 +1,6 @@
+import json
 import math
-from Base_classes.UnitType import UnitType, _to_unitx, prettify, very_prettify
+from Base_classes.UnitType import UnitType, _to_unitx, prettify
 from Base_classes.Skill import Skill, RoundSkill
 
 class BattleRound():
@@ -20,7 +21,8 @@ class BattleRound():
 
         # results
         self.round_kills = {}
-        self.need_continue_skills = {}
+        self.round_dmg_coef = {ut:0 for ut in UnitType}
+        self.need_continue_skills = {}  # Not used for now
 
         # Calc Round troops
         self.calc_round_troops()
@@ -32,27 +34,30 @@ class BattleRound():
 
     def calc_round_troops(self):
         # calc remaining troops by type
-        # RO-DO: Verify that skills work like stamps. If not? keep troop separated by ids?!
-            if self.round_idx == 0 :
-                self.round_troops = self.fighter.troops_by_type
-            else :
-                for ut in UnitType:
-                    self.round_troops[ut] = max(0, self.fighter.rounds[self.round_idx - 1].round_troops[ut] - sum(vs[ut] if ut in vs else 0 for vs in self.opponent.rounds[self.round_idx -1].round_kills.values()))
+        if self.round_idx == 0 :
+            self.round_troops = self.fighter.troops_by_type
+        else :
+            for ut in UnitType:
+                self.round_troops[ut] = max(0, self.fighter.rounds[self.round_idx - 1].round_troops[ut] - sum(vs[ut] if ut in vs else 0 for vs in self.opponent.rounds[self.round_idx -1].round_kills.values()))
     
     def calc_skills(self) :
+        # Previous round skills that are still active
         if self.round_idx > 0:
             for r_skill in self.fighter.rounds[self.round_idx - 1].round_skills:
-                if r_skill.need_continue :
-                    self.add_round_skill(r_skill)
+                if r_skill.used :
+                    if r_skill.need_continue :
+                        self.add_round_skill(r_skill)
+                    else:
+                        if r_skill._skill.skill_stackable: r_skill._skill.stack -= 1
                 else:
-                    if r_skill._skill.skill_stackable: r_skill._skill.stack -= 1
-
+                    r_skill._skill.activations_count -= 1
+    
         for skill in self.fighter.skills :
             if skill._activate_condition(self.fighter, self.opponent, self.round_idx) :
                 self.add_round_skill(RoundSkill(skill, self.round_idx))
-                skill.activations_count += 1
-                skill.last_round = self.round_idx
                 if skill.skill_stackable: skill.stack += 1
+                skill.activations_count += 1
+                skill.last_round = self.round_idx - 1
     
     def add_round_skill(self, r_skill):
         self.round_skills.append(r_skill)
@@ -68,11 +73,12 @@ class BattleRound():
 
     def calc_round_kills(self):
         for ut in UnitType :
+            # army size
             army = self.calc_round_army(ut)
-            # print("army:", army)
             if army == 0:
                 continue
-
+            
+            # get target
             target : UnitType = self.get_round_target(ut)
             
             # Special Skills :
@@ -86,19 +92,16 @@ class BattleRound():
             # Calc bonus dmg
             ut_kills = self.calc_bonus_dmg(unit_base_dmg, ut, target)
 
-            # if self.round_idx == 10: print(f"unit_base_dmg: {unit_base_dmg} / ut_kills: {ut_kills}" )
-
             # Fatigue
             ut_kills = ut_kills * (1 -  0.01/100 * self.round_idx)
 
-            ### ROUNDING
+            ### ROUNDING: Try later. PROBABLY NOT USED !
             # ut_kills = math.ceil(ut_kills)
 
             # store
             if ut_kills > 0:
                 self.round_kills[ut] = { target : ut_kills }
 
-        # print("Round kills: ", very_prettify(self.round_kills))
 
     def calc_bonus_dmg(self, unit_base_dmg, ut: UnitType, vs: UnitType):
         bonus_effects = {
@@ -128,6 +131,7 @@ class BattleRound():
                 for effect in r_skill._skill.skill_effects:
                     if effect['effect_op'] in bonus_effects:
                         r_skill._skill.uses_count += 1
+                        r_skill.used = True
                         eff_value = effect['effect_values'][r_skill._skill.skill_level]
                         if r_skill._skill.skill_extra_attack:
                             extra_attacks.append(eff_value)
@@ -142,27 +146,28 @@ class BattleRound():
                 for opp_effect in opp_skill._skill.skill_effects:
                     if opp_effect['effect_op'] in opp_bonus_effects:
                         opp_skill._skill.uses_count += 1
+                        opp_skill.used = True
                         opp_bonus_effects[ opp_effect['effect_op']].append(opp_effect['effect_values'][r_skill._skill.skill_level])
         
-        dmg_up = math.prod( (1.0 + sum(bonus_effects[_eff])/100.0) for _eff in bonus_effects if _eff.startswith("10"))
-        opp_dfs_down = math.prod( (1.0 + sum(bonus_effects[_eff])/100.0) for _eff in bonus_effects if _eff.startswith("21"))
-        opp_dfs_up = math.prod( (1.0 - sum(opp_bonus_effects[_eff])/100.0) for _eff in opp_bonus_effects if _eff.startswith("11"))
-        dmg_down = math.prod( (1.0 - sum(opp_bonus_effects[_eff])/100.0) for _eff in opp_bonus_effects if _eff.startswith("20"))
-
+        ############### TO CONFIRM
         # ATTACK
         #   Attack up               : * (1 + Coef)  --> fighter_skill
-        #   Op Attack down          : * (1 - Coef)  --> opponent_skill
+        #   Op Attack down of Op    : / (1 + Coef)  --> opponent_skill
         # OPPPONENT DEFENSE
-        #   Defense Up of Op        : / (1 - Coef)  --> opponent_skill
-        #   Op defense down of Op   : / (1 + Coef)  --> fighter_skill
+        #   Defense Up of Op        : * (1 - Coef)  --> opponent_skill
+        #   Op defense down         : / (1 - Coef)  --> fighter_skill
+        
+        dmg_up = math.prod( (1.0 + sum(bonus_effects[_eff])/100.0) for _eff in bonus_effects.keys() if _eff.startswith("10"))
+        opp_dfs_down = math.prod( (1.0 - sum(bonus_effects[_eff])/100.0) for _eff in bonus_effects.keys() if _eff.startswith("21"))
+        opp_dfs_up = math.prod( (1.0 - sum(opp_bonus_effects[_eff])/100.0) for _eff in opp_bonus_effects.keys() if _eff.startswith("11"))
+        dmg_down = math.prod( (1.0 + sum(opp_bonus_effects[_eff])/100.0) for _eff in opp_bonus_effects.keys() if _eff.startswith("20"))
 
-        normal = dmg_up * dmg_down / (opp_dfs_down * opp_dfs_up)
+        normal = dmg_up * opp_dfs_up / (dmg_down  * opp_dfs_down)
         extra = sum(extra_attacks) / 100.0
         
         coef = normal * (1 + extra)
 
-        # if self.round_idx == 200 : print(f'ut: {ut} / vs: {vs} ---->  Coef: {coef}')
-
+        self.round_dmg_coef[ut] = coef
         self.fighter.cumul_attacks[ut] += 1
         self.opponent.cumul_received_attacks[vs] += 1
         
@@ -171,7 +176,11 @@ class BattleRound():
     def calc_round_army(self, ut: UnitType):
         if ut not in self.round_troops: return 0
         army = (self.round_troops[ut] ** 0.5) * (self.army_min ** 0.5)
-        # OR # army = (self.round_troops[ut] * self.army_min) ** 0.5
+
+        ##### OR 
+        # # army = (self.round_troops[ut] * self.army_min) ** 0.5
+        ##### MORE LOGICAL WITH PYTHON FLOATS, BUT IT HAS BEEEN PROVEN LOGIC AND WOS ARE NOT FRIENDS
+
         army = math.ceil(army)
         return army
     
@@ -193,12 +202,13 @@ class BattleRound():
             for effect in self.round_skills[_index]._skill.skill_effects:
                 if effect['effect_type'] == 'attack_order':
                     self.round_skills[_index]._skill.uses_count += 1  # Skill applied
-                    return effect['effect_values'][1]
+                    self.round_skills[_index].used = True
+                    return effect['effect_values'][self.round_skills[_index]._skill.skill_level]
         return None
         
     def total_troops(self):
         return sum(self.round_troops[ut] for ut in UnitType)
     
-    def str_start_troops(self):
-        return f"{self.round_troops[UnitType.inf]:,.1f} / {self.round_troops[UnitType.lanc]:,.1f} / {self.round_troops[UnitType.mark]:,.1f}"
+    def print_round(self):
+        return f"{self.fighter.name}: {prettify(self.round_troops)} ___({prettify(self.round_dmg_coef)})"
     

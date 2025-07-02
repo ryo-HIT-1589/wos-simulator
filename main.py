@@ -7,25 +7,27 @@ from Base_classes.UnitType import UnitType
 with open("assets/fighters.json", "r+") as f:
     data = json.load(f)
 
+
 # ATTACKER DATA
-attacker = Fighter()
-attacker.stats = StatsBonus().from_list(data['daut'])
+attacker = Fighter("daut2")
+attacker.stats = StatsBonus().from_list(data[attacker.name])
 attacker.troops = {
-    "infantry_t6" : 500,
-    "lancers_t6" : 460,
-    "marksmen_t6" : 300
+    "infantry_t7" : 1000,
+    "lancer_t7" : 10,
+    "marksman_t7_fc1" : 200
 }
 
 # DEFENDER DATA
-defender = Fighter()
-defender.stats = StatsBonus().from_list(data['viper'])
+defender = Fighter("viper2")
+defender.stats = StatsBonus().from_list(data[defender.name])
 defender.troops = {
-    "infantry_t6" : 50,
-    "lancers_t6" : 50,
-    "marksmen_t6" : 50
+    "infantry_t7" : 100, 
+    "lancer_t7" : 0,
+    "marksman_t7" : 30
 }
 
 # # BATTLE
+
 f = Fight(attacker, defender)
-f.battle()
+f.battle(show_rounds_freq = 0)
 f.print_skills_report()

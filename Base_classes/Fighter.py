@@ -5,16 +5,13 @@ from Base_classes.JsonUtil import JsonUtil
 import math
 
 class Fighter:
-    def __init__(self):
+    def __init__(self, name):
 
+        self.name = name
         self._troops = {}
         self.stats = StatsBonus()
         
         self.skills = []
-
-        self.order_skills_index = []
-        self.dodge_skills_index = []
-        self.stun_skills_index = []
 
         self.attack_by_troop = {}
         self.defense_by_troop = {}
@@ -51,10 +48,6 @@ class Fighter:
         bonus_health = fighter_stats.health / 100
         bonus_defense = fighter_stats.defense / 100
 
-        ##### add additional bonus calc
-            # TO DO
-        ###############################
-
         attack_ret = base_attack * (1 + bonus_attack) * base_lethality * (1 + bonus_lethality) / 100.0
         defense_ret = base_health * (1 + bonus_health) * base_defense * (1 + bonus_defense) / 100.0
 
@@ -62,6 +55,7 @@ class Fighter:
         self.defense_by_troop[troop_name] = defense_ret
 
     def calc_by_type(self):
+        # To-Do: Verify that skills do indeed work like stamps
         for ut in UnitType:
             total_attack = 0.0
             total_defense = 0.0
@@ -74,10 +68,7 @@ class Fighter:
                     total_defense += num * self.defense_by_troop[troop_name]
                     count += num
             
-            ######## OR
-            # self.attack_by_type[ut] = total_attack / count
-            # self.defense_by_type[ut] = total_defense / count
-            # self.troops_by_type[ut] = count
+            # SOS Model: To confirm
             attack = 0.0
             defense = 0.0
             if total_attack > 0 and total_defense > 0:
@@ -95,7 +86,15 @@ class Fighter:
             self.defense_by_type[ut] = defense
             self.troops_by_type[ut] = count
 
-    def _calc_hero_skills(self):
+            
+            ######## OTHERWISE, Try
+            # self.attack_by_type[ut] = total_attack / count
+            # self.defense_by_type[ut] = total_defense / count
+            # self.troops_by_type[ut] = count
+            ################## Try later
+            
+
+    def _calc_hero_skills(self):    # Add heroes logic
         pass
 
     def _calc_troops_skills(self):
@@ -111,6 +110,10 @@ class Fighter:
     def get_sum_army(self):
         return sum(self.troops_by_type.values())
     
+    def get_skill_by_name(self, skill_name):
+        for skill in self.skills:
+            if skill.skill_name == skill_name: return skill
+
     @property
     def troops(self):
         return self._troops

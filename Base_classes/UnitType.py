@@ -21,10 +21,7 @@ def _to_unitx(id_str):
         return UnitType.mark
     return None
     
-def prettify(_UnitTypeJson, json_dump= True):
-    _dict = { k.name : v for k,v in _UnitTypeJson.items() }
-    if json_dump : return json.dumps(_dict, indent=2)
-    else : return _dict
-
-def very_prettify(_unit):
-    return json.dumps({ k.name : prettify(v, json_dump=False) for k,v in _unit.items() }, indent=4)
+def prettify(_dict, _json= False):
+    if _json: return json.dumps({ k.name : v for k,v in _dict.items() })
+    else : 
+        return ' / '.join("{:.1f}".format(_dict[v]) for v in UnitType)

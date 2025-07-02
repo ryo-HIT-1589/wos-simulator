@@ -21,7 +21,7 @@ class Skill:
         self.skill_target_type = skill_dict['skill_target_type']            # The skill affects this type (of fighter)
         self.skill_trigger_type = skill_dict['skill_trigger_type']          # The skill activates against this type (of opponent)
         self.skill_type_relation = skill_dict['skill_type_relation']        # The skill only activates if the skill_troop_type is still present in the battle
-        # self.skill_conditions = skill_dict['skill_conditions']
+        # self.skill_conditions = skill_dict['skill_conditions']            # could be used later for special conditions like 'every X attack'
         self.skill_order = skill_dict['skill_order']
         self.skill_effects = skill_dict['skill_effects']
 
@@ -37,24 +37,12 @@ class Skill:
 
     def _activate_condition(self, fighter, opponent, _round):
 
-        # permanent skill : simple skill that stay active
-        if self.skill_permanent and _round > 0:
-            return False
-        
         # Already active, unless stackable
         if _round > 0 and self.skill_stackable == False:
             for r_skill in fighter.rounds[_round - 1].round_skills:
-                if self.skill_name in r_skill.id and r_skill.need_continue:
+                if self.skill_name in r_skill.id and r_skill.used and r_skill.need_continue:
                     return False
 
-        if not self.skill_permanent :
-            # start round
-            if _round < self.skill_lag : return False
-            # frequency
-            if (_round - self.skill_lag) % self.skill_frequency != 0 : return False
-            # chance
-            if self.skill_is_chance and (random() >= self.skill_probability): return False
-        
         # relation check : Skills that only work if their base_troop_type is still present in the battle
         if self.skill_type_relation and fighter.rounds[_round].round_troops[_to_unitx(self.skill_troop_type)] <= 0: 
             return False
@@ -70,6 +58,18 @@ class Skill:
         # check if trigger still present in battle
         if self.skill_trigger_type != "all":
             if opponent.rounds[_round].round_troops[_to_unitx(self.skill_trigger_type)] <= 0 : return False
+
+        # Round conditions
+        if not self.skill_permanent :
+            # start round
+            if _round < self.skill_lag : return False
+            # frequency
+            if (_round - self.skill_lag) % self.skill_frequency != 0 : return False
+            # chance
+            if self.skill_is_chance :
+                r = random()
+                if ( r >= self.skill_probability[self.skill_level]/100.0): 
+                    return False
         
         return True
 
@@ -82,6 +82,7 @@ class RoundSkill():
         self.round_idx = round
         self.remaining_duration = _skill.skill_duration
         self.need_continue = (self.remaining_duration > 1) or _skill.skill_permanent
+        self.used = False
     
     def _apply_condition(self, ut, vs):
         # check target
