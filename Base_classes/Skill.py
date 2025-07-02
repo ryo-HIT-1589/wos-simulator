@@ -12,9 +12,11 @@ class Skill:
         self.skill_lag = skill_dict['skill_lag']
         self.skill_frequency = skill_dict['skill_frequency']
         self.skill_duration = skill_dict['skill_duration']
-        self.skill_stackable = skill_dict['skill_stackable']
         self.skill_is_chance = skill_dict['skill_is_chance']
         self.skill_probability = skill_dict['skill_probability']
+
+        self.skill_extra_attack = skill_dict['skill_extra_attack']
+        self.skill_stackable = skill_dict['skill_stackable']
         self.skill_affects_opponent = skill_dict['skill_affects_opponent']
         self.skill_target_type = skill_dict['skill_target_type']            # The skill affects this type (of fighter)
         self.skill_trigger_type = skill_dict['skill_trigger_type']          # The skill activates against this type (of opponent)
@@ -23,19 +25,29 @@ class Skill:
         self.skill_order = skill_dict['skill_order']
         self.skill_effects = skill_dict['skill_effects']
 
-        self.skill_level = self.skill_default_level if level == 0 else level
+        self.skill_level = str(self.skill_default_level if level == 0 else level)
 
         # trackers:
         self.last_round = None
-        self.activations_count = 0
         self.stack = 0
 
-    def _activate_condition(self, fighter, opponent, _round):
-        # need_continue (unless stackable)
-        if _round > 0 and self.skill_stackable == False and self.skill_name in fighter.rounds[_round - 1].need_continue_skills : return True
+        self.activations_count = 0
+        self.uses_count = 0
+        self.extra_damage = 0
 
-        # permanent skill : Skill that activates every round
-        if not self.skill_permanent : 
+    def _activate_condition(self, fighter, opponent, _round):
+
+        # permanent skill : simple skill that stay active
+        if self.skill_permanent and _round > 0:
+            return False
+        
+        # Already active, unless stackable
+        if _round > 0 and self.skill_stackable == False:
+            for r_skill in fighter.rounds[_round - 1].round_skills:
+                if self.skill_name in r_skill.id and r_skill.need_continue:
+                    return False
+
+        if not self.skill_permanent :
             # start round
             if _round < self.skill_lag : return False
             # frequency
@@ -44,7 +56,7 @@ class Skill:
             if self.skill_is_chance and (random() >= self.skill_probability): return False
         
         # relation check : Skills that only work if their base_troop_type is still present in the battle
-        if self.skill_type_relation and fighter.round[_round].round_troops[_to_unitx(self.skill_troop_type)] <= 0: 
+        if self.skill_type_relation and fighter.rounds[_round].round_troops[_to_unitx(self.skill_troop_type)] <= 0: 
             return False
         
         # check if target still present in battle
@@ -58,7 +70,7 @@ class Skill:
         # check if trigger still present in battle
         if self.skill_trigger_type != "all":
             if opponent.rounds[_round].round_troops[_to_unitx(self.skill_trigger_type)] <= 0 : return False
-
+        
         return True
 
 
@@ -66,12 +78,12 @@ class RoundSkill():
     def __init__(self, _skill:Skill, round:int) -> None:
         # trackers
         self._skill = _skill
-        self.id = _skill.skill_name + "_" + str(_skill.stack + 1) # change later to support stackable skills
+        self.id = _skill.skill_name + "_" + str(_skill.stack) # Edit later to support stackable skills
         self.round_idx = round
         self.remaining_duration = _skill.skill_duration
-        self.need_continue = (self.remaining_duration > 1)
+        self.need_continue = (self.remaining_duration > 1) or _skill.skill_permanent
     
-    def _apply_condition(self, fighter, opponent, ut, vs):
+    def _apply_condition(self, ut, vs):
         # check target
         if self._skill.skill_target_type == "friendly":
             if _to_unitx(self._skill.skill_target_type) == ut : return False
@@ -83,22 +95,4 @@ class RoundSkill():
     
     def _apply(self):
         self.remaining_duration = self.remaining_duration - 1
-        self.need_continue = (self.remaining_duration > 0)
-        return self.need_continue
-
-    def get_effect(self, _effect_type):
-        if "_effect_type" == "damage":
-            return self._damage
-        
-        if "_effect_type" == "defense":
-            return self._defense
-        
-        if "_effect_type" == "dodge":
-            return self._dodge
-        
-        if "_effect_type" == "stunt":
-            return self._stunt
-        
-        if "_effect_type" == "order":
-            return self._damage
-   
+        self.need_continue = (self.remaining_duration > 1) or self._skill.skill_permanent

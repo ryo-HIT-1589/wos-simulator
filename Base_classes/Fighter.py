@@ -7,7 +7,7 @@ import math
 class Fighter:
     def __init__(self):
 
-        self.troops = {}
+        self._troops = {}
         self.stats = StatsBonus()
         
         self.skills = []
@@ -24,6 +24,8 @@ class Fighter:
         self.defense_by_type = {}
 
         self.rounds = {}
+        self.cumul_attacks = {ut:0 for ut in UnitType}
+        self.cumul_received_attacks = {ut:0 for ut in UnitType}
 
     def calc(self, opponent):
         self.calc_skills()
@@ -105,15 +107,16 @@ class Fighter:
                     condition = troop_skill['skill_conditions'][0]['condition_type']
                     if troop[condition] >= troop_skill['skill_conditions'][0]['condition_value']:
                         self.skills.append(Skill(troop_skill))
-                        for _effect in troop_skill['skill_effects']:
-                            if _effect['effect_type'] == 'attack_order':
-                                self.order_skills_index.append(len(self.skills) - 1)
-                            # if _effect['effect_type'] == 'dodge':
-                            #     self.dodge_skills_index.append(len(self.skills) - 1)
-                            # if _effect['effect_type'] == 'stun':
-                            #     self.stun_skills_index.append(len(self.skills) - 1)
-
 
     def get_sum_army(self):
         return sum(self.troops_by_type.values())
     
+    @property
+    def troops(self):
+        return self._troops
+
+    @troops.setter
+    def troops(self, troop_dict):
+        for troop_name in troop_dict:
+            if troop_dict[troop_name] > 0:
+                self._troops[troop_name] = troop_dict[troop_name]

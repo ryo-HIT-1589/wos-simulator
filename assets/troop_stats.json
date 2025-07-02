@@ -10,5 +10,29 @@
             "Lethality": 10,
             "Health": 730
         }
+    },
+    "lancers_t6": {
+        "id": "lancers_t6",
+        "type": "lancers",
+        "tier": 6,
+        "fc": 0,
+        "stats": {
+            "Attack": 730,
+            "Defense": 10,
+            "Lethality": 10,
+            "Health": 243
+        }
+    },
+    "marksmen_t6": {
+        "id": "marksmen_t6",
+        "type": "marksmen",
+        "tier": 6,
+        "fc": 0,
+        "stats": {
+            "Attack": 974,
+            "Defense": 10,
+            "Lethality": 10,
+            "Health": 183
+        }
     }
 }

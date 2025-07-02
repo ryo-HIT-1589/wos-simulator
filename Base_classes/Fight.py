@@ -44,10 +44,24 @@ class Fight:
             self.defender.rounds[round_idx].calc_skills()
 
             # Get results
-            self.attacker.rounds[round_idx].get_results()
-            self.defender.rounds[round_idx].get_results()
+            printing = 0
+            self.attacker.rounds[round_idx].get_results(printing = printing)
+            self.defender.rounds[round_idx].get_results(printing = printing)
 
+            # if round_idx == 1: print("r_skills:", self.attacker.skills)
+            # if round_idx == 0: self.print_skills_report()
             round_idx += 1
         
         print('\n--------------- BATTLE ENDED  ----------------')
         print(f'Result :    Attacker : {math.ceil(att_troops)}   -   Defender: {math.ceil(def_troops)}       ({round_idx} rounds)')
+
+    def print_skills_report(self):
+        print('\n---------- ATTACKER SKILLS')
+        for skill in self.attacker.skills:
+            if skill.activations_count > 0:
+                print(f'- {skill.skill_name} : {skill.activations_count} ({skill.extra_damage})')
+                
+        print('\n---------- DEFENDER SKILLS')
+        for skill in self.defender.skills:
+            if skill.activations_count > 0:
+                print(f'- {skill.skill_name} : {skill.activations_count} ({skill.extra_damage})')

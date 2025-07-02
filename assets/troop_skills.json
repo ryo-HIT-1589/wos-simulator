@@ -9,12 +9,13 @@
         "skill_lag": 0,
         "skill_frequency": 1,
         "skill_duration": -1,
-        "skill_stackable": false,
         "skill_is_chance": false,
         "skill_probability": 0.0,
+        "skill_extra_attack": false,
+        "skill_stackable": false,
         "skill_affects_opponent": false,
         "skill_target_type": "infantry",
-        "skill_trigger_type": "lancer",
+        "skill_trigger_type": "lancers",
         "skill_type_relation": 0,
         "skill_conditions": [
             {
@@ -25,11 +26,81 @@
         "skill_order": 1,
         "skill_effects": [
             {
-                "effect_type": "damage",
+                "effect_type": "DamageUp",
                 "effect_values": {
                     "1": 10
                 },
-                "effect_op": "multiply"
+                "effect_op": "101"
+            }
+        ]
+    },
+    {
+        "skill_name": "Charge",
+        "skill_decription": "Increase Attack Damage to Marksmen by 10%",
+        "skill_type": "troop_skill",
+        "skill_default_level": 1,
+        "skill_troop_type": "lancers",
+        "skill_permanent": true,
+        "skill_lag": 0,
+        "skill_frequency": 1,
+        "skill_duration": -1,
+        "skill_is_chance": false,
+        "skill_probability": 0.0,
+        "skill_extra_attack": false,
+        "skill_stackable": false,
+        "skill_affects_opponent": false,
+        "skill_target_type": "lancers",
+        "skill_trigger_type": "marksmen",
+        "skill_type_relation": 0,
+        "skill_conditions": [
+            {
+                "condition_type": "tier",
+                "condition_value": 0
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "effect_type": "DamageUp",
+                "effect_values": {
+                    "1": 10
+                },
+                "effect_op": "101"
+            }
+        ]
+    },
+    {
+        "skill_name": "Ranged Strike",
+        "skill_decription": "Increase Attack Damage to Infantry by 10%",
+        "skill_type": "troop_skill",
+        "skill_default_level": 1,
+        "skill_troop_type": "marksmen",
+        "skill_permanent": true,
+        "skill_lag": 0,
+        "skill_frequency": 1,
+        "skill_duration": -1,
+        "skill_is_chance": false,
+        "skill_probability": 0.0,
+        "skill_extra_attack": false,
+        "skill_stackable": false,
+        "skill_affects_opponent": false,
+        "skill_target_type": "marksmen",
+        "skill_trigger_type": "infantry",
+        "skill_type_relation": 0,
+        "skill_conditions": [
+            {
+                "condition_type": "tier",
+                "condition_value": 0
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "effect_type": "DamageUp",
+                "effect_values": {
+                    "1": 10
+                },
+                "effect_op": "101"
             }
         ]
     }
