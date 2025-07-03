@@ -29,5 +29,5 @@ defender.troops = {
 # # BATTLE
 
 f = Fight(attacker, defender)
-f.battle(show_rounds_freq = 0)
+f.battle(show_rounds_freq = 10)
 f.print_skills_report()
