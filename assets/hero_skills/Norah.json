@@ -1,0 +1,218 @@
+[
+    {
+        "skill_hero": "Norah",
+        "skill_num": 1,
+        "skill_name": "Combined arms",
+        "skill_description": "Decreasing damage taken by X% and boosting damage dealt by X% for infantry and marksmen",
+        "skill_troop_type": "lancer",
+        "skill_permanent": true,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "OppDamageDown",
+                "effect_op": 201,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Combined arms/1",
+                "trigger_types": {
+                    "trigger_for": "once",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "friendly",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 3,
+                    "2": 6,
+                    "3": 9,
+                    "4": 12,
+                    "5": 15
+                },
+                "special": {}
+            },
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Combined arms/2",
+                "trigger_types": {
+                    "trigger_for": "once",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "friendly",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 3,
+                    "2": 6,
+                    "3": 9,
+                    "4": 12,
+                    "5": 15
+                },
+                "special": {}
+            }
+        ]
+    },
+    {
+        "skill_hero": "Norah",
+        "skill_num": 2,
+        "skill_name": "Sneak strike",
+        "skill_description": "Granting her lancers a 20% chance of dealing X% extra damage to all enemies on attack",
+        "skill_troop_type": "lancer",
+        "skill_permanent": false,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": true,
+        "skill_type_relation": true,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": "turn",
+            "frequency_value": 1
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": true,
+                "effect_is_chance": true,
+                "effect_num": "Sneak strike/1",
+                "trigger_types": {
+                    "trigger_for": "lancer",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "lancer",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {
+                    "1": 20,
+                    "2": 20,
+                    "3": 20,
+                    "4": 20,
+                    "5": 20
+                },
+                "effect_values": {
+                    "1": 20,
+                    "2": 40,
+                    "3": 60,
+                    "4": 80,
+                    "5": 100
+                },
+                "special": {}
+            }
+        ]
+    },
+    {
+        "skill_hero": "Norah",
+        "skill_num": 3,
+        "skill_name": "Momentum",
+        "skill_description": "Increasing all troops damage dealt by X% and reducing their damage taken by X%, every five attacks made by lancers for 2 turns",
+        "skill_troop_type": "lancer",
+        "skill_permanent": false,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": true,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": "attack",
+            "frequency_value": 5
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Momentum/1",
+                "trigger_types": {
+                    "trigger_for": "lancer",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turns",
+                    "duration_value": 2,
+                    "effect_lag": 1
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 5,
+                    "2": 10,
+                    "3": 15,
+                    "4": 20,
+                    "5": 25
+                },
+                "special": {}
+            },
+            {
+                "affects_opponent": false,
+                "effect_type": "DefenseUp",
+                "effect_op": 111,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Momentum/2",
+                "trigger_types": {
+                    "trigger_for": "lancer",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turns",
+                    "duration_value": 2,
+                    "effect_lag": 1
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 5,
+                    "2": 10,
+                    "3": 15,
+                    "4": 20,
+                    "5": 25
+                },
+                "special": {}
+            }
+        ]
+    }
+]

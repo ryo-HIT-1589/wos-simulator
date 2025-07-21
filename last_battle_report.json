@@ -1,0 +1,95 @@
+{
+    "time": "2025-07-21 - 01:18",
+    "attacker": {
+        "name": "daut",
+        "heroes": {
+            "Jessie": {
+                "skill_1": 2,
+                "skill_2": 2
+            }
+        },
+        "troops": {
+            "infantry_t6": 5000,
+            "lancer_t6": 3000,
+            "marksman_t6": 5000
+        },
+        "stats": {
+            "inf": {
+                "attack": 9.94,
+                "defense": 9.44,
+                "lethality": 1.75,
+                "health": 1.75
+            },
+            "lanc": {
+                "attack": 43.4,
+                "defense": 42.9,
+                "lethality": 1.75,
+                "health": 1.75
+            },
+            "mark": {
+                "attack": 10.43,
+                "defense": 9.44,
+                "lethality": 1.75,
+                "health": 1.75
+            }
+        },
+        "joiner_heroes": {}
+    },
+    "defender": {
+        "name": "viper",
+        "heroes": {
+            "Hector": {
+                "skill_1": 4,
+                "skill_2": 3,
+                "skill_3": 3
+            }
+        },
+        "troops": {
+            "infantry_t6": 200,
+            "lancer_t6": 200,
+            "marksman_t6": 200
+        },
+        "stats": {
+            "inf": {
+                "attack": 438.15,
+                "defense": 441.65,
+                "lethality": 127.57,
+                "health": 232.61
+            },
+            "lanc": {
+                "attack": 167.0,
+                "defense": 163.0,
+                "lethality": 110.31,
+                "health": 100.21
+            },
+            "mark": {
+                "attack": 174.75,
+                "defense": 168.25,
+                "lethality": 117.75,
+                "health": 104.74
+            }
+        },
+        "joiner_heroes": {}
+    },
+    "sim_result": {
+        "attacker": 8588,
+        "defender": 0
+    },
+    "sim_rounds": 82,
+    "sim_skills_used": {
+        "attacker": [
+            "Jessie- Stand of Arms/1        :    1 (246)    (DamageUp)",
+            "Jessie- Bulwarks/1             :    1 (226)    (DefenseUp)",
+            "INFANTRY- Master Brawler/1     :    1 (8)      (DamageUp)",
+            "LANCERS- Charge/1              :    1 (6)      (DamageUp)",
+            "MARKSMEN- Ranged Strike/1      :    1 (68)     (DamageUp)"
+        ],
+        "defender": [
+            "Hector- Survival instincts/1   :    26 (78)    (DefenseUp)",
+            "Hector- Rampant/1              :    1 (5)      (DamageUp)",
+            "Hector- Rampant/2              :    1 (5)      (DamageUp)",
+            "Hector- Blitz/1                :    55 (55) - Extra: 602.5 (DamageUp)",
+            "MARKSMEN- Ranged Strike/1      :    1 (82)     (DamageUp)"
+        ]
+    }
+}

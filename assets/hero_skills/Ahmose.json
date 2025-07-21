@@ -1,0 +1,212 @@
+[
+    {
+        "skill_hero": "Ahmose",
+        "skill_num": 1,
+        "skill_name": "Viper formation",
+        "skill_description": "His infantry pauses the attack once every 4 times reducing damage taken by Lancers and Marksmen by X% and Infantry by X% for 2 turns",
+        "skill_troop_type": "infantry",
+        "skill_permanent": false,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": true,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": "attack",
+            "frequency_value": 4
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DefenseUp",
+                "effect_op": 111,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Viper formation/1",
+                "trigger_types": {
+                    "trigger_for": "infantry",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "friendly",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": 2,
+                    "effect_lag": 1
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 10,
+                    "2": 15,
+                    "3": 20,
+                    "4": 25,
+                    "5": 30
+                },
+                "special": {}
+            },
+            {
+                "affects_opponent": false,
+                "effect_type": "DefenseUp",
+                "effect_op": 111,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Viper formation/2",
+                "trigger_types": {
+                    "trigger_for": "infantry",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "infantry",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": 2,
+                    "effect_lag": 1
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 10,
+                    "2": 25,
+                    "3": 40,
+                    "4": 55,
+                    "5": 70
+                },
+                "special": {}
+            }
+        ]
+    },
+    {
+        "skill_hero": "Ahmose",
+        "skill_num": 2,
+        "skill_name": "Prayer of flame",
+        "skill_description": "Ahmose amplifies the combat spirit of friendly infantry with the power of Fire Crystal, increasing their damage dealt by X%",
+        "skill_troop_type": "infantry",
+        "skill_permanent": true,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": true,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Prayer of flame/1",
+                "trigger_types": {
+                    "trigger_for": "infantry",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "infantry",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 20,
+                    "2": 40,
+                    "3": 60,
+                    "4": 80,
+                    "5": 100
+                },
+                "special": {}
+            }
+        ]
+    },
+    {
+        "skill_hero": "Ahmose",
+        "skill_num": 3,
+        "skill_name": "Blade of light",
+        "skill_description": "Increasing his infantries' damage dealt per attack by X% and the target's damage taken by X% for 1 turn",
+        "skill_troop_type": "infantry",
+        "skill_permanent": true,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": true,
+        "skill_type_relation": true,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Blade of light/1",
+                "trigger_types": {
+                    "trigger_for": "infantry",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "infantry",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 12,
+                    "2": 24,
+                    "3": 36,
+                    "4": 48,
+                    "5": 60
+                },
+                "special": {}
+            },
+            {
+                "affects_opponent": true,
+                "effect_type": "OppDefenseDown",
+                "effect_op": 213,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Blade of light/2",
+                "trigger_types": {
+                    "trigger_for": "infantry",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "target"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": 1,
+                    "effect_lag": 1
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 5,
+                    "2": 10,
+                    "3": 15,
+                    "4": 20,
+                    "5": 25
+                },
+                "special": {}
+            }
+        ]
+    }
+]

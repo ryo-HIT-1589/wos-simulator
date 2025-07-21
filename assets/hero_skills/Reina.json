@@ -1,0 +1,167 @@
+[
+    {
+        "skill_hero": "Reina",
+        "skill_num": 1,
+        "skill_name": "Assassin's instinct",
+        "skill_description": "Increasing normal attack damage by X% for all troops",
+        "skill_troop_type": "lancer",
+        "skill_permanent": true,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Assassin's instinct/1",
+                "trigger_types": {
+                    "trigger_for": "once",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 10,
+                    "2": 15,
+                    "3": 20,
+                    "4": 25,
+                    "5": 30
+                },
+                "special": {
+                    "only_normal": true
+                }
+            }
+        ]
+    },
+    {
+        "skill_hero": "Reina",
+        "skill_num": 2,
+        "skill_name": "Swift jive",
+        "skill_description": "Grants all troops a X% chance of dodging normal attacks",
+        "skill_troop_type": "lancer",
+        "skill_permanent": true,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "Dodge",
+                "effect_op": 0,
+                "extra_attack": false,
+                "effect_is_chance": true,
+                "effect_num": "Swift jive/1",
+                "trigger_types": {
+                    "trigger_for": "all",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "trigger",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {
+                    "1": 4,
+                    "2": 8,
+                    "3": 12,
+                    "4": 16,
+                    "5": 20
+                },
+                "effect_values": {},
+                "special": {
+                    "only_normal": true
+                }
+            }
+        ]
+    },
+    {
+        "skill_hero": "Reina",
+        "skill_num": 3,
+        "skill_name": "Shadow blade",
+        "skill_description": "With Reina's clever tactics, her Lancers have a 25% chance of performing an extra attack, dealing X% damage",
+        "skill_troop_type": "lancer",
+        "skill_permanent": false,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": true,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": "turn",
+            "frequency_value": 1
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": true,
+                "effect_is_chance": true,
+                "effect_num": "Shadow blade/1",
+                "trigger_types": {
+                    "trigger_for": "lancer",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "lancer",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {
+                    "1": 25,
+                    "2": 25,
+                    "3": 25,
+                    "4": 25,
+                    "5": 25
+                },
+                "effect_values": {
+                    "1": 120,
+                    "2": 140,
+                    "3": 160,
+                    "4": 180,
+                    "5": 200
+                },
+                "special": {
+                    "effect_evolution": {
+                        "category": "effect_is_total_damage",
+                        "data": {}
+                    }
+                }
+            }
+        ]
+    }
+]

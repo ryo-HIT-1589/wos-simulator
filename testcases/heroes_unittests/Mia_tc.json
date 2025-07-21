@@ -1,0 +1,510 @@
+[
+  {
+    "test_id": "daut_viper_1",
+    "time": "2025-07-18 - 23:40",
+    "attacker": {
+      "name": "daut",
+      "heroes": {},
+      "troops": {
+        "infantry_t6": 2000,
+        "lancer_t6": 1000,
+        "marksman_t6": 1000
+      },
+      "stats": {
+        "inf": {
+          "attack": 9.94,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        },
+        "lanc": {
+          "attack": 9.94,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        },
+        "mark": {
+          "attack": 10.43,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        }
+      },
+      "joiner_heroes": {}
+    },
+    "defender": {
+      "name": "viper",
+      "heroes": {
+        "Mia": {
+          "skill_1": 1,
+          "skill_2": 1
+        }
+      },
+      "troops": {
+        "infantry_t6": 200,
+        "lancer_t6": 100,
+        "marksman_t6": 100
+      },
+      "stats": {
+        "inf": {
+          "attack": 184.5,
+          "defense": 188.0,
+          "lethality": 107.24,
+          "health": 114.18
+        },
+        "lanc": {
+          "attack": 241.09,
+          "defense": 237.09,
+          "lethality": 110.31,
+          "health": 100.21
+        },
+        "mark": {
+          "attack": 174.75,
+          "defense": 168.25,
+          "lethality": 117.75,
+          "health": 104.74
+        }
+      },
+      "joiner_heroes": {}
+    },
+    "sim_result": {
+      "attacker": 0,
+      "defender": 208
+    },
+    "sim_skills_used": {
+      "attacker": {
+        "MARKSMEN- Ranged Strike/1": "1 (68)"
+      },
+      "defender": {
+        "Mia- Bad luck streak/1": "101 (303)",
+        "Mia- Lucky charm/1": "39 (117) - Extra: 190.8",
+        "INFANTRY- Master Brawler/1": "1 (10)",
+        "LANCERS- Charge/1": "1 (8)",
+        "MARKSMEN- Ranged Strike/1": "1 (50)"
+      }
+    },
+    "game_report_result": {
+      "attacker": 0,
+      "defender": 181
+    }
+  },
+  {
+    "test_id": "daut_viper_2",
+    "time": "2025-07-18 - 23:41",
+    "attacker": {
+      "name": "daut",
+      "heroes": {},
+      "troops": {
+        "infantry_t6": 2000,
+        "lancer_t6": 1000,
+        "marksman_t6": 1000
+      },
+      "stats": {
+        "inf": {
+          "attack": 9.94,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        },
+        "lanc": {
+          "attack": 9.94,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        },
+        "mark": {
+          "attack": 10.43,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        }
+      },
+      "joiner_heroes": {}
+    },
+    "defender": {
+      "name": "viper",
+      "heroes": {
+        "Mia": {
+          "skill_1": 1,
+          "skill_2": 1
+        }
+      },
+      "troops": {
+        "infantry_t6": 150,
+        "lancer_t6": 100,
+        "marksman_t6": 100
+      },
+      "stats": {
+        "inf": {
+          "attack": 184.5,
+          "defense": 188.0,
+          "lethality": 107.24,
+          "health": 114.18
+        },
+        "lanc": {
+          "attack": 241.09,
+          "defense": 237.09,
+          "lethality": 110.31,
+          "health": 100.21
+        },
+        "mark": {
+          "attack": 174.75,
+          "defense": 168.25,
+          "lethality": 117.75,
+          "health": 104.74
+        }
+      },
+      "joiner_heroes": {}
+    },
+    "sim_result": {
+      "attacker": 790,
+      "defender": 0
+    },
+    "sim_skills_used": {
+      "attacker": {
+        "INFANTRY- Master Brawler/1": "1 (5)",
+        "LANCERS- Charge/1": "1 (7)",
+        "MARKSMEN- Ranged Strike/1": "1 (50)"
+      },
+      "defender": {
+        "Mia- Bad luck streak/1": "102 (272)",
+        "Mia- Lucky charm/1": "39 (97) - Extra: 119.1",
+        "MARKSMEN- Ranged Strike/1": "1 (55)"
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 1670,
+        "defender": 0
+      },
+      {
+        "attacker": 1592,
+        "defender": 0
+      },
+      {
+        "attacker": 1661,
+        "defender": 0
+      },
+      {
+        "attacker": 1664,
+        "defender": 0
+      },
+      {
+        "attacker": 1594,
+        "defender": 0
+      },
+      {
+        "attacker": 1604,
+        "defender": 0
+      },
+      {
+        "attacker": 1591,
+        "defender": 0
+      }
+    ]
+  },
+  {
+    "test_id": "daut_viper_3",
+    "time": "2025-07-19 - 01:02",
+    "attacker": {
+      "name": "daut",
+      "heroes": {
+        "Mia": {
+          "skill_1": 1
+        }
+      },
+      "troops": {
+        "infantry_t6": 1000,
+        "lancer_t6": 500,
+        "marksman_t6": 500
+      },
+      "stats": {
+        "inf": {
+          "attack": 9.94,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        },
+        "lanc": {
+          "attack": 46.55,
+          "defense": 46.05,
+          "lethality": 1.75,
+          "health": 1.75
+        },
+        "mark": {
+          "attack": 10.43,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        }
+      },
+      "joiner_heroes": {}
+    },
+    "defender": {
+      "name": "viper",
+      "heroes": {},
+      "troops": {
+        "infantry_t6": 100,
+        "lancer_t6": 50,
+        "marksman_t6": 50
+      },
+      "stats": {
+        "inf": {
+          "attack": 184.5,
+          "defense": 188.0,
+          "lethality": 107.24,
+          "health": 114.18
+        },
+        "lanc": {
+          "attack": 167.0,
+          "defense": 163.0,
+          "lethality": 110.31,
+          "health": 100.21
+        },
+        "mark": {
+          "attack": 174.75,
+          "defense": 168.25,
+          "lethality": 117.75,
+          "health": 104.74
+        }
+      },
+      "joiner_heroes": {}
+    },
+    "sim_result": {
+      "attacker": 1084,
+      "defender": 0
+    },
+    "sim_skills_used": {
+      "attacker": {
+        "Mia- Bad luck streak/1": "99 (99)",
+        "INFANTRY- Master Brawler/1": "1 (9)",
+        "LANCERS- Charge/1": "1 (7)",
+        "MARKSMEN- Ranged Strike/1": "1 (53)"
+      },
+      "defender": {
+        "MARKSMEN- Ranged Strike/1": "1 (69)"
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 1127,
+        "defender": 0
+      },
+      {
+        "attacker": 1118,
+        "defender": 0
+      },
+      {
+        "attacker": 1118,
+        "defender": 0
+      },
+      {
+        "attacker": 1128,
+        "defender": 0
+      },
+      {
+        "attacker": 1127,
+        "defender": 0
+      },
+      {
+        "attacker": 1127,
+        "defender": 0
+      }
+    ]
+  },
+  {
+    "test_id": "daut_viper_4",
+    "time": "2025-07-20 - 02:42",
+    "attacker": {
+      "name": "daut",
+      "heroes": {
+        "Mia": {
+          "skill_1": 1
+        }
+      },
+      "troops": {
+        "infantry_t6": 1000,
+        "lancer_t6": 500,
+        "marksman_t6": 500
+      },
+      "stats": {
+        "inf": {
+          "attack": 9.94,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        },
+        "lanc": {
+          "attack": 46.55,
+          "defense": 46.05,
+          "lethality": 1.75,
+          "health": 1.75
+        },
+        "mark": {
+          "attack": 10.43,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        }
+      },
+      "joiner_heroes": {}
+    },
+    "defender": {
+      "name": "viper",
+      "heroes": {},
+      "troops": {
+        "infantry_t6": 100,
+        "lancer_t6": 50,
+        "marksman_t6": 100
+      },
+      "stats": {
+        "inf": {
+          "attack": 184.5,
+          "defense": 188.0,
+          "lethality": 107.24,
+          "health": 114.18
+        },
+        "lanc": {
+          "attack": 167.0,
+          "defense": 163.0,
+          "lethality": 110.31,
+          "health": 100.21
+        },
+        "mark": {
+          "attack": 174.75,
+          "defense": 168.25,
+          "lethality": 117.75,
+          "health": 104.74
+        }
+      },
+      "joiner_heroes": {}
+    },
+    "sim_result": {
+      "attacker": 672,
+      "defender": 0
+    },
+    "sim_skills_used": {
+      "attacker": {
+        "Mia- Bad luck streak/1": "58 (162)",
+        "INFANTRY- Master Brawler/1": "1 (5)",
+        "LANCERS- Charge/1": "1 (14)",
+        "MARKSMEN- Ranged Strike/1": "1 (46)"
+      },
+      "defender": {
+        "MARKSMEN- Ranged Strike/1": "1 (51)"
+      }
+    },
+    "game_report_result": {
+      "attacker": 671,
+      "defender": 0
+    }
+  },
+  {
+    "test_id": "daut_viper_5",
+    "time": "2025-07-20 - 02:48",
+    "attacker": {
+      "name": "daut",
+      "heroes": {
+        "Mia": {
+          "skill_1": 1
+        }
+      },
+      "troops": {
+        "infantry_t6": 1000,
+        "lancer_t6": 500,
+        "marksman_t6": 500
+      },
+      "stats": {
+        "inf": {
+          "attack": 9.94,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        },
+        "lanc": {
+          "attack": 46.55,
+          "defense": 46.05,
+          "lethality": 1.75,
+          "health": 1.75
+        },
+        "mark": {
+          "attack": 10.43,
+          "defense": 9.44,
+          "lethality": 1.75,
+          "health": 1.75
+        }
+      },
+      "joiner_heroes": {}
+    },
+    "defender": {
+      "name": "viper",
+      "heroes": {
+        "Mia": {
+          "skill_1": 1,
+          "skill_2": 1
+        }
+      },
+      "troops": {
+        "infantry_t6": 100,
+        "lancer_t6": 50,
+        "marksman_t6": 100
+      },
+      "stats": {
+        "inf": {
+          "attack": 184.5,
+          "defense": 188.0,
+          "lethality": 107.24,
+          "health": 114.18
+        },
+        "lanc": {
+          "attack": 241.09,
+          "defense": 237.09,
+          "lethality": 110.31,
+          "health": 100.21
+        },
+        "mark": {
+          "attack": 174.75,
+          "defense": 168.25,
+          "lethality": 117.75,
+          "health": 104.74
+        }
+      },
+      "joiner_heroes": {}
+    },
+    "sim_result": {
+      "attacker": 0,
+      "defender": 120
+    },
+    "sim_skills_used": {
+      "attacker": {
+        "Mia- Bad luck streak/1": "48 (126)",
+        "MARKSMEN- Ranged Strike/1": "1 (48)"
+      },
+      "defender": {
+        "Mia- Bad luck streak/1": "45 (126)",
+        "Mia- Lucky charm/1": "81 (81) - Extra: 93.3",
+        "INFANTRY- Master Brawler/1": "1 (6)",
+        "LANCERS- Charge/1": "1 (7)",
+        "MARKSMEN- Ranged Strike/1": "1 (42)"
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 119
+      },
+      {
+        "attacker": 0,
+        "defender": 121
+      },
+      {
+        "attacker": 0,
+        "defender": 123
+      },
+      {
+        "attacker": 0,
+        "defender": 124
+      }
+    ]
+  }
+]

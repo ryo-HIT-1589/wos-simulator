@@ -1,0 +1,329 @@
+[
+    {
+        "test_id": "daut_viper_1",
+        "time": "2025-07-20 - 03:49",
+        "attacker": {
+            "name": "daut",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Flint": {
+                    "skill_1": 4,
+                    "skill_2": 4,
+                    "skill_3": 4
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 50,
+                "marksman_t6": 50
+            },
+            "stats": {
+                "inf": {
+                    "attack": 313.87,
+                    "defense": 317.37,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 178
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "MARKSMEN- Ranged Strike/1": "1 (22)"
+            },
+            "defender": {
+                "Flint- Pyromaniac/1": "10 (24)",
+                "Flint- Burning resolve/1": "1 (66)",
+                "Flint- Immolation/1": "34 (102)",
+                "INFANTRY- Master Brawler/1": "1 (2)",
+                "LANCERS- Charge/1": "1 (2)",
+                "MARKSMEN- Ranged Strike/1": "1 (18)"
+            }
+        },
+        "game_report_result": [
+            {
+                "attacker": 0,
+                "defender": 150
+            },
+            {
+                "attacker": 0,
+                "defender": 151
+            },
+            {
+                "attacker": 0,
+                "defender": 149
+            },
+            {
+                "attacker": 0,
+                "defender": 149
+            },
+            {
+                "attacker": 0,
+                "defender": 150
+            }
+        ]
+    },
+    {
+        "test_id": "daut_viper_2",
+        "time": "2025-07-20 - 04:07",
+        "attacker": {
+            "name": "daut",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 3000,
+                "lancer_t6": 2000,
+                "marksman_t6": 2000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Flint": {
+                    "skill_1": 4,
+                    "skill_2": 4,
+                    "skill_3": 4
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 50,
+                "marksman_t6": 50
+            },
+            "stats": {
+                "inf": {
+                    "attack": 313.87,
+                    "defense": 317.37,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 3375,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "INFANTRY- Master Brawler/1": "1 (1)",
+                "LANCERS- Charge/1": "1 (5)",
+                "MARKSMEN- Ranged Strike/1": "1 (46)"
+            },
+            "defender": {
+                "Flint- Pyromaniac/1": "34 (100)",
+                "Flint- Burning resolve/1": "1 (155)",
+                "Flint- Immolation/1": "85 (245)",
+                "MARKSMEN- Ranged Strike/1": "1 (47)"
+            }
+        },
+        "game_report_result": [
+            {
+                "attacker": 5720,
+                "defender": 0
+            },
+            {
+                "attacker": 5756,
+                "defender": 0
+            },
+            {
+                "attacker": 5736,
+                "defender": 0
+            },
+            {
+                "attacker": 5715,
+                "defender": 0
+            },
+            {
+                "attacker": 5733,
+                "defender": 0
+            },
+            {
+                "attacker": 5736,
+                "defender": 0
+            }
+        ]
+    },
+    {
+        "test_id": "daut_viper_3",
+        "time": "2025-07-20 - 05:38",
+        "attacker": {
+            "name": "daut",
+            "heroes": {
+                "Flint": {
+                    "skill_1": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 2000,
+                "lancer_t6": 1000,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 40.24,
+                    "defense": 39.74,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 200,
+                "lancer_t6": 100,
+                "marksman_t6": 100
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 1703,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Flint- Pyromaniac/1": "47 (136)",
+                "INFANTRY- Master Brawler/1": "1 (11)",
+                "LANCERS- Charge/1": "1 (9)",
+                "MARKSMEN- Ranged Strike/1": "1 (67)"
+            },
+            "defender": {
+                "MARKSMEN- Ranged Strike/1": "1 (87)"
+            }
+        },
+        "game_report_result": [
+            {
+                "attacker": 1613,
+                "defender": 0
+            },
+            {
+                "attacker": 1613,
+                "defender": 0
+            },
+            {
+                "attacker": 1612,
+                "defender": 0
+            },
+            {
+                "attacker": 1614,
+                "defender": 0
+            },
+            {
+                "attacker": 1613,
+                "defender": 0
+            }
+        ]
+    }
+]

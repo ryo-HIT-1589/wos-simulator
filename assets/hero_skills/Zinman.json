@@ -1,0 +1,132 @@
+[
+    {
+        "skill_hero": "Zinman",
+        "skill_num": 1,
+        "skill_name": "Implacable",
+        "skill_description": "Increasing all troops' Defense by X% and Health by X%",
+        "skill_troop_type": "marksmen",
+        "skill_permanent": true,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DefenseUp",
+                "effect_op": 112,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Implacable/1",
+                "trigger_types": {
+                    "trigger_for": "once",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 2,
+                    "2": 4,
+                    "3": 6,
+                    "4": 8,
+                    "5": 10
+                },
+                "special": {}
+            },
+            {
+                "affects_opponent": false,
+                "effect_type": "DefenseUp",
+                "effect_op": 113,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Implacable/2",
+                "trigger_types": {
+                    "trigger_for": "once",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 2,
+                    "2": 4,
+                    "3": 6,
+                    "4": 8,
+                    "5": 10
+                },
+                "special": {}
+            }
+        ]
+    },
+    {
+        "skill_hero": "Zinman",
+        "skill_num": 3,
+        "skill_name": "Positional Battler",
+        "skill_description": "Increasing damage dealt by X% for all troops",
+        "skill_troop_type": "marksmen",
+        "skill_permanent": true,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Positional Battler/1",
+                "trigger_types": {
+                    "trigger_for": "once",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 5,
+                    "2": 10,
+                    "3": 15,
+                    "4": 20,
+                    "5": 25
+                },
+                "special": {}
+            }
+        ]
+    }
+]

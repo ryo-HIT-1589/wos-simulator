@@ -1,0 +1,269 @@
+[
+    {
+        "test_id": "daut_viper_1",
+        "time": "2025-07-18 - 23:01",
+        "attacker": {
+            "name": "daut",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Zinman": {
+                    "skill_1": 1,
+                    "skill_3": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 60,
+                "marksman_t6": 60
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 238.34,
+                    "defense": 231.84,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 122
+        },
+        "sim_skills_used": {
+            "attacker": {},
+            "defender": {}
+        },
+        "game_report_result": {
+            "attacker": 0,
+            "defender": 122
+        }
+    },
+    {
+        "test_id": "daut_viper_2",
+        "time": "2025-07-18 - 23:16",
+        "attacker": {
+            "name": "daut",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 2000,
+                "lancer_t6": 2000,
+                "marksman_t6": 2000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Zinman": {
+                    "skill_1": 1,
+                    "skill_3": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 200,
+                "lancer_t6": 100,
+                "marksman_t6": 100
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 238.34,
+                    "defense": 231.84,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 4030,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "INFANTRY- Master Brawler/1": "1 (8)",
+                "LANCERS- Charge/1": "1 (8)",
+                "MARKSMEN- Ranged Strike/1": "1 (48)"
+            },
+            "defender": {
+                "Zinman- Implacable/1": "1 (192)",
+                "Zinman- Implacable/2": "1 (192)",
+                "Zinman- Positional Battler/1": "1 (168)",
+                "MARKSMEN- Ranged Strike/1": "1 (64)"
+            }
+        },
+        "game_report_result": {
+            "attacker": 4018,
+            "defender": 0
+        }
+    },
+    {
+        "test_id": "daut_viper_3",
+        "time": "2025-07-18 - 23:31",
+        "attacker": {
+            "name": "daut",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 2000,
+                "lancer_t6": 2000,
+                "marksman_t6": 2000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Zinman": {
+                    "skill_1": 1,
+                    "skill_3": 1
+                },
+                "Jessie": {
+                    "skill_1": 5,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 200,
+                "lancer_t6": 100,
+                "marksman_t6": 100
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 270.45,
+                    "defense": 266.45,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 238.34,
+                    "defense": 231.84,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 131
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "MARKSMEN- Ranged Strike/1": "1 (54)"
+            },
+            "defender": {
+                "Zinman- Implacable/1": "1 (172)",
+                "Zinman- Implacable/2": "1 (172)",
+                "Zinman- Positional Battler/1": "1 (198)",
+                "Jessie- Stand of Arms/1": "1 (198)",
+                "Jessie- Bulwarks/1": "1 (172)",
+                "INFANTRY- Master Brawler/1": "1 (12)",
+                "LANCERS- Charge/1": "1 (14)",
+                "MARKSMEN- Ranged Strike/1": "1 (42)"
+            }
+        },
+        "game_report_result": {
+            "attacker": 0,
+            "defender": 130
+        }
+    }
+]

@@ -1,0 +1,673 @@
+[
+    {
+        "test_id": "daut_viper_1",
+        "time": "2025-07-18 - 15:36",
+        "attacker": {
+            "name": "daut",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 1,
+                    "skill_2": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 50,
+                "marksman_t6": 50
+            },
+            "stats": {
+                "inf": {
+                    "attack": 253.82,
+                    "defense": 257.32,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 108
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "MARKSMEN- Ranged Strike/1": "1 (83)"
+            },
+            "defender": {
+                "Logan- Lion strike/1": "47 (136) - Extra: 70.1",
+                "Logan- Lion intimidation/1": "1 (219)",
+                "INFANTRY- Master Brawler/1": "1 (12)",
+                "LANCERS- Charge/1": "1 (9)",
+                "MARKSMEN- Ranged Strike/1": "1 (62)"
+            }
+        },
+        "game_report_result": [
+            {
+                "attacker": 0,
+                "defender": 103
+            },
+            {
+                "attacker": 0,
+                "defender": 103
+            }
+        ]
+    },
+    {
+        "test_id": "daut_viper_2",
+        "time": "2025-07-18 - 15:45",
+        "attacker": {
+            "name": "daut",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 69.72,
+                    "defense": 69.22,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 50,
+                "marksman_t6": 50
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 1467,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Logan- Lion strike/1": "45 (122) - Extra: 19.7",
+                "Logan- Lion intimidation/1": "1 (178)",
+                "INFANTRY- Master Brawler/1": "1 (8)",
+                "LANCERS- Charge/1": "1 (6)",
+                "MARKSMEN- Ranged Strike/1": "1 (52)"
+            },
+            "defender": {
+                "MARKSMEN- Ranged Strike/1": "1 (66)"
+            }
+        },
+        "game_report_result": {
+            "attacker": 1435,
+            "defender": 0
+        }
+    },
+    {
+        "test_id": "daut_viper_3",
+        "time": "2025-07-18 - 15:56",
+        "attacker": {
+            "name": "daut",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 69.72,
+                    "defense": 69.22,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 1,
+                    "skill_2": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 50,
+                "marksman_t6": 100
+            },
+            "stats": {
+                "inf": {
+                    "attack": 253.82,
+                    "defense": 257.32,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 1021,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Logan- Lion strike/1": "36 (94) - Extra: 13.1",
+                "Logan- Lion intimidation/1": "1 (221)",
+                "INFANTRY- Master Brawler/1": "1 (9)",
+                "LANCERS- Charge/1": "1 (14)",
+                "MARKSMEN- Ranged Strike/1": "1 (63)"
+            },
+            "defender": {
+                "Logan- Lion strike/1": "46 (134) - Extra: 51.2",
+                "Logan- Lion intimidation/1": "1 (258)",
+                "MARKSMEN- Ranged Strike/1": "1 (86)"
+            }
+        },
+        "game_report_result": {
+            "attacker": 1029,
+            "defender": 0
+        }
+    },
+    {
+        "test_id": "daut_viper_4",
+        "time": "2025-07-18 - 15:58",
+        "attacker": {
+            "name": "daut",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 29,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 69.72,
+                    "defense": 69.22,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 1,
+                    "skill_2": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 120,
+                "lancer_t6": 100,
+                "marksman_t6": 100
+            },
+            "stats": {
+                "inf": {
+                    "attack": 253.82,
+                    "defense": 257.32,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 305
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Logan- Lion strike/1": "4 (9) - Extra: 0.7",
+                "Logan- Lion intimidation/1": "1 (42)",
+                "MARKSMEN- Ranged Strike/1": "1 (14)"
+            },
+            "defender": {
+                "Logan- Lion strike/1": "14 (22) - Extra: 55.2",
+                "Logan- Lion intimidation/1": "1 (25)",
+                "INFANTRY- Master Brawler/1": "1 (7)",
+                "LANCERS- Charge/1": "1 (5)",
+                "MARKSMEN- Ranged Strike/1": "1 (2)"
+            }
+        },
+        "game_report_result": {
+            "attacker": 0,
+            "defender": 306
+        }
+    },
+    {
+        "test_id": "daut_viper_5",
+        "time": "2025-07-18 - 16:18",
+        "attacker": {
+            "name": "daut",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 69.72,
+                    "defense": 69.22,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 1,
+                    "skill_2": 1
+                }
+            },
+            "troops": {
+                "lancer_t6": 46,
+                "marksman_t6": 100
+            },
+            "stats": {
+                "inf": {
+                    "attack": 253.82,
+                    "defense": 257.32,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 1880,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Logan- Lion strike/1": "17 (46) - Extra: 13.2",
+                "Logan- Lion intimidation/1": "1 (31)",
+                "INFANTRY- Master Brawler/1": "1 (8)",
+                "LANCERS- Charge/1": "1 (15)"
+            },
+            "defender": {
+                "Logan- Lion strike/1": "5 (15) - Extra: 3.8",
+                "Logan- Lion intimidation/1": "1 (69)",
+                "MARKSMEN- Ranged Strike/1": "1 (23)"
+            }
+        },
+        "game_report_result": {
+            "attacker": 1873,
+            "defender": 0
+        }
+    },
+    {
+        "test_id": "daut_viper_6",
+        "time": "2025-07-18 - 16:02",
+        "attacker": {
+            "name": "daut",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 69.72,
+                    "defense": 69.22,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 1,
+                    "skill_2": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 110,
+                "lancer_t6": 100,
+                "marksman_t6": 100
+            },
+            "stats": {
+                "inf": {
+                    "attack": 253.82,
+                    "defense": 257.32,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 125
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Logan- Lion strike/1": "41 (119) - Extra: 17.8",
+                "Logan- Lion intimidation/1": "1 (222)",
+                "INFANTRY- Master Brawler/1": "1 (1)",
+                "MARKSMEN- Ranged Strike/1": "1 (62)"
+            },
+            "defender": {
+                "Logan- Lion strike/1": "44 (125) - Extra: 86.2",
+                "Logan- Lion intimidation/1": "1 (215)",
+                "LANCERS- Charge/1": "1 (8)",
+                "MARKSMEN- Ranged Strike/1": "1 (63)"
+            }
+        },
+        "game_report_result": [
+            {
+                "attacker": 0,
+                "defender": 146
+            },
+            {
+                "attacker": 0,
+                "defender": 140
+            },
+            {
+                "attacker": 0,
+                "defender": 146
+            },
+            {
+                "attacker": 0,
+                "defender": 140
+            },
+            {
+                "attacker": 0,
+                "defender": 146
+            }
+        ]
+    },
+    {
+        "test_id": "daut_viper_7",
+        "time": "2025-07-18 - 16:56",
+        "attacker": {
+            "name": "daut",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "lancer_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 69.72,
+                    "defense": 69.22,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Logan": {
+                    "skill_1": 1,
+                    "skill_2": 1
+                }
+            },
+            "troops": {
+                "marksman_t6": 60
+            },
+            "stats": {
+                "inf": {
+                    "attack": 253.82,
+                    "defense": 257.32,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 43,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Logan- Lion intimidation/1": "1 (65)",
+                "LANCERS- Charge/1": "1 (65)"
+            },
+            "defender": {
+                "Logan- Lion intimidation/1": "1 (65)"
+            }
+        },
+        "game_report_result": {
+            "attacker": 41,
+            "defender": 0
+        }
+    }
+]

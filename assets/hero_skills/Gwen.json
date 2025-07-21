@@ -1,0 +1,182 @@
+[
+    {
+        "skill_hero": "Gwen",
+        "skill_num": 1,
+        "skill_name": "Eagle vision",
+        "skill_description": "Increasing target's damage taken by X%",
+        "skill_troop_type": "marksmen",
+        "skill_permanent": true,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": true,
+                "effect_type": "OppDefenseDown",
+                "effect_op": 214,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Eagle vision/1",
+                "trigger_types": {
+                    "trigger_for": "once",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 5,
+                    "2": 10,
+                    "3": 15,
+                    "4": 20,
+                    "5": 25
+                },
+                "special": {}
+            }
+        ]
+    },
+    {
+        "skill_hero": "Gwen",
+        "skill_num": 2,
+        "skill_name": "Air dominance",
+        "skill_description": "Grants all troops' attack X% extra damage after every 5 attacks and causes the target to receive X% extra damage for its next attack received",
+        "skill_troop_type": "marksmen",
+        "skill_permanent": false,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": true,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": "attack",
+            "frequency_value": 5
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": true,
+                "effect_is_chance": false,
+                "effect_num": "Air dominance/1",
+                "trigger_types": {
+                    "trigger_for": "all",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "trigger",
+                    "benefit_vs": "target"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 20,
+                    "2": 40,
+                    "3": 60,
+                    "4": 80,
+                    "5": 100
+                },
+                "special": {}
+            },
+            {
+                "affects_opponent": true,
+                "effect_type": "OppDefenseDown",
+                "effect_op": 215,
+                "extra_attack": true,
+                "effect_is_chance": false,
+                "effect_num": "Air dominance/2",
+                "trigger_types": {
+                    "trigger_for": "all",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "target"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 1
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 5,
+                    "2": 7.5,
+                    "3": 10,
+                    "4": 12.5,
+                    "5": 15
+                },
+                "special": {}
+            }
+        ]
+    },
+    {
+        "skill_hero": "Gwen",
+        "skill_num": 3,
+        "skill_name": "Blastmaster",
+        "skill_description": "Gwen equips her Marksmen with grenades, dealing X% extra damage to all enemies on the next attack of every 4 attacks",
+        "skill_troop_type": "marksmen",
+        "skill_permanent": false,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": true,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": "attack",
+            "frequency_value": 4
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": true,
+                "effect_is_chance": false,
+                "effect_num": "Blastmaster/1",
+                "trigger_types": {
+                    "trigger_for": "marksmen",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "marksmen",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 1
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 10,
+                    "2": 20,
+                    "3": 30,
+                    "4": 40,
+                    "5": 50
+                },
+                "special": {}
+            }
+        ]
+    }
+]

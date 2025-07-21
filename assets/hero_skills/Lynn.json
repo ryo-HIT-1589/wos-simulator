@@ -1,0 +1,152 @@
+[
+    {
+        "skill_hero": "Lynn",
+        "skill_num": 1,
+        "skill_name": "Song of lion",
+        "skill_description": "Granting a 40% chance of increasing damage dealt by X% for all troops",
+        "skill_troop_type": "marksmen",
+        "skill_permanent": false,
+        "skill_is_chance": true,
+        "skill_probability": 40,
+        "skill_round_stackable": true,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": "turn",
+            "frequency_value": 1
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Song of lion/1",
+                "trigger_types": {
+                    "trigger_for": "once",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 10,
+                    "2": 20,
+                    "3": 30,
+                    "4": 40,
+                    "5": 50
+                },
+                "special": {}
+            }
+        ]
+    },
+    {
+        "skill_hero": "Lynn",
+        "skill_num": 2,
+        "skill_name": "Melancholic ballad",
+        "skill_description": "Reducing damage dealt by X% for all enemy troops",
+        "skill_troop_type": "marksmen",
+        "skill_permanent": true,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": true,
+                "effect_type": "OppDamageDown",
+                "effect_op": 201,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Melancholic ballad/1",
+                "trigger_types": {
+                    "trigger_for": "once",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 4,
+                    "2": 8,
+                    "3": 12,
+                    "4": 16,
+                    "5": 20
+                },
+                "special": {}
+            }
+        ]
+    },
+    {
+        "skill_hero": "Lynn",
+        "skill_num": 3,
+        "skill_name": "Oonai Cadenza",
+        "skill_description": "Increases her marksmen attack by X% for every 3 attacks. stackable, and last until the end of battle",
+        "skill_troop_type": "marksmen",
+        "skill_permanent": false,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": true,
+        "skill_type_relation": true,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": "attack",
+            "frequency_value": 3
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 102,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Oonai Cadenza/1",
+                "trigger_types": {
+                    "trigger_for": "marksmen",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "marksmen",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 1,
+                    "2": 2,
+                    "3": 3,
+                    "4": 4,
+                    "5": 5
+                },
+                "special": {}
+            }
+        ]
+    }
+]

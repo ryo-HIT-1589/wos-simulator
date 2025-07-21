@@ -1,0 +1,429 @@
+[
+    {
+        "test_id": "daut_viper_1",
+        "time": "2025-07-18 - 12:55",
+        "attacker": {
+            "name": "daut",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Alonso": {
+                    "skill_1": 1,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 50,
+                "marksman_t6": 50
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 224.22,
+                    "defense": 217.72,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 26
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "MARKSMEN- Ranged Strike/1": "1 (64) "
+            },
+            "defender": {
+                "Alonso- Onslaught/1": "3 (3) ",
+                "Alonso- Iron strength/1": "13 (4) ",
+                "INFANTRY- Master Brawler/1": "1 (2) ",
+                "LANCERS- Charge/1": "1 (2) ",
+                "MARKSMEN- Ranged Strike/1": "1 (62) "
+            }
+        },
+        "game_report_result": [
+            {
+                "attacker": 0,
+                "defender": 23
+            },
+            {
+                "attacker": 0,
+                "defender": 22
+            },
+            {
+                "attacker": 0,
+                "defender": 19
+            },
+            {
+                "attacker": 0,
+                "defender": 16
+            },
+            {
+                "attacker": 0,
+                "defender": 25
+            },
+            {
+                "attacker": 0,
+                "defender": 16
+            },
+            {
+                "attacker": 0,
+                "defender": 21
+            },
+            {
+                "attacker": 0,
+                "defender": 21
+            },
+            {
+                "attacker": 0,
+                "defender": 16
+            }
+        ]
+    },
+    {
+        "test_id": "daut_viper_2",
+        "time": "2025-07-18 - 14:59",
+        "attacker": {
+            "name": "daut",
+            "heroes": {
+                "Alonso": {
+                    "skill_1": 1,
+                    "skill_2": 1,
+                    "skill_3": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 1200,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 86.75,
+                    "defense": 85.76,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 50,
+                "marksman_t6": 50
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 1477,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Alonso- Onslaught/1": "13 (12) ",
+                "Alonso- Iron strength/1": "7 (0) ",
+                "Alonso- Poison harpoon/1": "72 (72)  - Extra: 9.1",
+                "INFANTRY- Master Brawler/1": "1 (7) ",
+                "LANCERS- Charge/1": "1 (6) ",
+                "MARKSMEN- Ranged Strike/1": "1 (43) "
+            },
+            "defender": {
+                "MARKSMEN- Ranged Strike/1": "1 (54) "
+            }
+        },
+        "game_report_result": [
+            {
+                "attacker": 1483,
+                "defender": 0
+            },
+            {
+                "attacker": 1470,
+                "defender": 0
+            },
+            {
+                "attacker": 1483,
+                "defender": 0
+            },
+            {
+                "attacker": 1473,
+                "defender": 0
+            }
+        ]
+    },
+    {
+        "test_id": "daut_viper_3",
+        "time": "2025-07-18 - 15:11",
+        "attacker": {
+            "name": "daut",
+            "heroes": {
+                "Alonso": {
+                    "skill_1": 1,
+                    "skill_2": 1,
+                    "skill_3": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 1200,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 86.75,
+                    "defense": 85.76,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Alonso": {
+                    "skill_1": 1,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 50,
+                "marksman_t6": 50
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 224.22,
+                    "defense": 217.72,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 1384,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Alonso- Onslaught/1": "8 (8) ",
+                "Alonso- Iron strength/1": "12 (0) ",
+                "Alonso- Poison harpoon/1": "81 (81)  - Extra: 9.4",
+                "INFANTRY- Master Brawler/1": "1 (7) ",
+                "LANCERS- Charge/1": "1 (7) ",
+                "MARKSMEN- Ranged Strike/1": "1 (43) "
+            },
+            "defender": {
+                "Alonso- Onslaught/1": "7 (6) ",
+                "Alonso- Iron strength/1": "10 (0) ",
+                "MARKSMEN- Ranged Strike/1": "1 (56) "
+            }
+        },
+        "game_report_result": [
+            {
+                "attacker": 1387,
+                "defender": 0
+            },
+            {
+                "attacker": 1371,
+                "defender": 0
+            },
+            {
+                "attacker": 1392,
+                "defender": 0
+            }
+        ]
+    },
+    {
+        "test_id": "daut_viper_4",
+        "time": "2025-07-20 - 20:19",
+        "attacker": {
+            "name": "daut",
+            "heroes": {
+                "Alonso": {
+                    "skill_1": 1,
+                    "skill_2": 1,
+                    "skill_3": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 2677,
+                "lancer_t6": 1611
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 86.75,
+                    "defense": 85.76,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Alonso": {
+                    "skill_1": 1,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 1125,
+                "lancer_t6": 236
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 167.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 224.22,
+                    "defense": 217.72,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 1140
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Alonso- Poison harpoon/1": "61 (61) - Extra: 11.3"
+            },
+            "defender": {
+                "INFANTRY- Master Brawler/1": "1 (11)"
+            }
+        },
+        "game_report_result": [
+            {
+                "attacker": 0,
+                "defender": 1141
+            }
+        ]
+    }
+]

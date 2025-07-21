@@ -1,0 +1,52 @@
+[
+    {
+        "skill_hero": "Lumak",
+        "skill_num": 1,
+        "skill_name": "Tactical Deception",
+        "skill_description": "All enemy troops' damage dealt is reduced by X%",
+        "skill_troop_type": "lancer",
+        "skill_permanent": true,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": true,
+                "effect_type": "OppDamageDown",
+                "effect_op": 201,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Tactical Deception/1",
+                "trigger_types": {
+                    "trigger_for": "once",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 4,
+                    "2": 8,
+                    "3": 12,
+                    "4": 16,
+                    "5": 20
+                },
+                "special": {}
+            }
+        ]
+    }
+]

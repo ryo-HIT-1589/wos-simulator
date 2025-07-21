@@ -1,0 +1,471 @@
+[
+    {
+        "test_id": "daut_viper_1",
+        "time": "2025-07-18 - 18:45",
+        "attacker": {
+            "name": "daut2x",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Reina": {
+                    "skill_1": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 50,
+                "marksman_t6": 50
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 213.71,
+                    "defense": 209.71,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 62
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "MARKSMEN- Ranged Strike/1": "1 (64)"
+            },
+            "defender": {
+                "Reina- Assassin's instinct/1": "1 (228)",
+                "INFANTRY- Master Brawler/1": "1 (5)",
+                "LANCERS- Charge/1": "1 (11)",
+                "MARKSMEN- Ranged Strike/1": "1 (59)"
+            }
+        },
+        "game_report_result": {
+            "attacker": 0,
+            "defender": 62
+        }
+    },
+    {
+        "test_id": "daut_viper_2",
+        "time": "2025-07-18 - 18:55",
+        "attacker": {
+            "name": "daut2x",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 500,
+                "marksman_t6": 1000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Reina": {
+                    "skill_1": 1
+                },
+                "Jasser": {
+                    "skill_1": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 50,
+                "marksman_t6": 50
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 213.71,
+                    "defense": 209.71,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 245.7,
+                    "defense": 239.2,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 40
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "MARKSMEN- Ranged Strike/1": "1 (52)"
+            },
+            "defender": {
+                "Reina- Assassin's instinct/1": "1 (197)",
+                "Jasser- Tactical genius/1": "1 (197)",
+                "INFANTRY- Master Brawler/1": "1 (5)",
+                "LANCERS- Charge/1": "1 (12)",
+                "MARKSMEN- Ranged Strike/1": "1 (47)"
+            }
+        },
+        "game_report_result": {
+            "attacker": 0,
+            "defender": 40
+        }
+    },
+    {
+        "test_id": "daut_viper_3",
+        "time": "2025-07-18 - 19:17",
+        "attacker": {
+            "name": "daut",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 1000,
+                "marksman_t6": 1000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Reina": {
+                    "skill_1": 1
+                },
+                "Logan": {
+                    "skill_1": 1,
+                    "skill_2": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 60,
+                "marksman_t6": 60
+            },
+            "stats": {
+                "inf": {
+                    "attack": 253.82,
+                    "defense": 257.32,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 213.71,
+                    "defense": 209.71,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 703,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "LANCERS- Charge/1": "1 (1)",
+                "MARKSMEN- Ranged Strike/1": "1 (58)"
+            },
+            "defender": {
+                "Reina- Assassin's instinct/1": "1 (216)",
+                "Logan- Lion strike/1": "9 (21)",
+                "Logan- Lion intimidation/1": "1 (209)",
+                "INFANTRY- Master Brawler/1": "1 (8)",
+                "MARKSMEN- Ranged Strike/1": "1 (50)"
+            }
+        },
+        "game_report_result": {
+            "attacker": 658,
+            "defender": 0
+        }
+    },
+    {
+        "test_id": "daut_viper_4",
+        "time": "2025-07-18 - 20:11",
+        "attacker": {
+            "name": "daut",
+            "heroes": {},
+            "troops": {
+                "infantry_t6": 1000,
+                "lancer_t6": 1000,
+                "marksman_t6": 1000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Reina": {
+                    "skill_1": 1,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 60,
+                "marksman_t6": 60
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 243.27,
+                    "defense": 239.27,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 1685,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "INFANTRY- Master Brawler/1": "1 (7)",
+                "LANCERS- Charge/1": "1 (9)",
+                "MARKSMEN- Ranged Strike/1": "1 (44)"
+            },
+            "defender": {
+                "Reina- Assassin's instinct/1": "1 (163)",
+                "Reina- Swift jive/1": "7 (7)",
+                "MARKSMEN- Ranged Strike/1": "1 (51)"
+            }
+        },
+        "game_report_result": [
+            {
+                "attacker": 1536,
+                "defender": 0
+            },
+            {
+                "attacker": 1325,
+                "defender": 0
+            },
+            {
+                "attacker": 1500,
+                "defender": 0
+            },
+            {
+                "attacker": 1333,
+                "defender": 0
+            },
+            {
+                "attacker": 1297,
+                "defender": 0
+            },
+            {
+                "attacker": 1579,
+                "defender": 0
+            }
+        ]
+    },
+    {
+        "test_id": "daut_viper_5",
+        "time": "2025-07-18 - 20:16",
+        "attacker": {
+            "name": "daut",
+            "heroes": {},
+            "troops": {
+                "lancer_t6": 333,
+                "marksman_t6": 1000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Reina": {
+                    "skill_1": 1,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 60,
+                "marksman_t6": 60
+            },
+            "stats": {
+                "inf": {
+                    "attack": 184.5,
+                    "defense": 188.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 243.27,
+                    "defense": 239.27,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 174.75,
+                    "defense": 168.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 201
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "MARKSMEN- Ranged Strike/1": "1 (19)"
+            },
+            "defender": {
+                "Reina- Assassin's instinct/1": "1 (57)",
+                "Reina- Swift jive/1": "2 (1)",
+                "INFANTRY- Master Brawler/1": "1 (6)",
+                "LANCERS- Charge/1": "1 (13)"
+            }
+        },
+        "game_report_result": {
+            "attacker": 0,
+            "defender": 202
+        }
+    }
+]

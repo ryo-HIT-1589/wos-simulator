@@ -1,0 +1,158 @@
+[
+    {
+        "skill_hero": "Molly",
+        "skill_num": 1,
+        "skill_name": "Calling of the storm",
+        "skill_description": "Granting all troops' attack a X% chance of stunning the target for 1 turn",
+        "skill_troop_type": "lancer",
+        "skill_permanent": false,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": true,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": "turn",
+            "frequency_value": 1
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": true,
+                "effect_type": "Stun",
+                "effect_op": 0,
+                "extra_attack": false,
+                "effect_is_chance": true,
+                "effect_num": "Calling of the storm/1",
+                "trigger_types": {
+                    "trigger_for": "all",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "target"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": 1,
+                    "effect_lag": 1
+                },
+                "effect_probabilities": {
+                    "1": 4,
+                    "2": 8,
+                    "3": 12,
+                    "4": 16,
+                    "5": 20
+                },
+                "effect_values": {},
+                "special": {}
+            }
+        ]
+    },
+    {
+        "skill_hero": "Molly",
+        "skill_num": 2,
+        "skill_name": "Ice Dominion",
+        "skill_description": "Granting all troops' attack a 50% chance of increasing damage dealt by X%",
+        "skill_troop_type": "lancer",
+        "skill_permanent": false,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": true,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": "turn",
+            "frequency_value": 1
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": true,
+                "effect_is_chance": true,
+                "effect_num": "Ice Dominion/1",
+                "trigger_types": {
+                    "trigger_for": "all",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "trigger",
+                    "benefit_vs": "target"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {
+                    "1": 50,
+                    "2": 50,
+                    "3": 50,
+                    "4": 50,
+                    "5": 50
+                },
+                "effect_values": {
+                    "1": 10,
+                    "2": 20,
+                    "3": 30,
+                    "4": 40,
+                    "5": 50
+                },
+                "special": {}
+            }
+        ]
+    },
+    {
+        "skill_hero": "Molly",
+        "skill_num": 3,
+        "skill_name": "Youthful rage",
+        "skill_description": "Increasing damage dealt by X% for all troops",
+        "skill_troop_type": "lancer",
+        "skill_permanent": true,
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": false,
+        "skill_order": 1,
+        "skill_type": "hero_skill",
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Youthful rage/1",
+                "trigger_types": {
+                    "trigger_for": "once",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "all",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 5,
+                    "2": 10,
+                    "3": 15,
+                    "4": 20,
+                    "5": 25
+                },
+                "special": {}
+            }
+        ]
+    }
+]

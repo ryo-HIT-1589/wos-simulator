@@ -1,0 +1,1043 @@
+[
+    {
+        "test_id": "daut_viper_1",
+        "time": "2025-07-12 - 23:09",
+        "attacker": {
+            "name": "daut2x",
+            "stats": {
+                "inf": {
+                    "attack": 5.0,
+                    "defense": 8.0,
+                    "lethality": 1.8,
+                    "health": 1.8
+                },
+                "lanc": {
+                    "attack": 38.46,
+                    "defense": 41.46,
+                    "lethality": 1.8,
+                    "health": 1.8
+                },
+                "mark": {
+                    "attack": 5.0,
+                    "defense": 8.0,
+                    "lethality": 1.8,
+                    "health": 1.8
+                }
+            },
+            "troops": {
+                "infantry_t6": 1130,
+                "lancer_t6": 100,
+                "marksman_t6": 200
+            },
+            "heroes": {
+                "Jessie": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper2x",
+            "stats": {
+                "inf": {
+                    "attack": 187.5,
+                    "defense": 187.0,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 171.0,
+                    "defense": 163.0,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 178.75,
+                    "defense": 167.25,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "troops": {
+                "infantry_t6": 100,
+                "lancer_t6": 30,
+                "marksman_t6": 30
+            },
+            "heroes": {},
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 346,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Jessie- Stand of Arms": "1",
+                "Jessie- Bulwarks": "1",
+                "INFANTRY- Master Brawler": "1",
+                "LANCERS- Charge": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            },
+            "defender": {
+                "MARKSMEN- Ranged Strike": "1"
+            }
+        },
+        "game_report_result": {
+            "attacker": 342,
+            "defender": 0
+        }
+    },
+    {
+        "test_id": "daut_viper_2",
+        "time": "2025-07-12 - 23:17",
+        "attacker": {
+            "name": "daut2x",
+            "stats": {
+                "inf": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 9.94,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 10.43,
+                    "defense": 9.44,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "troops": {
+                "infantry_t6": 20,
+                "marksman_t6": 180
+            },
+            "heroes": {},
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper2x",
+            "stats": {
+                "inf": {
+                    "attack": 187.5,
+                    "defense": 187.0,
+                    "lethality": 107.2,
+                    "health": 114.2
+                },
+                "lanc": {
+                    "attack": 171.0,
+                    "defense": 163.0,
+                    "lethality": 110.3,
+                    "health": 100.2
+                },
+                "mark": {
+                    "attack": 228.27,
+                    "defense": 216.77,
+                    "lethality": 117.8,
+                    "health": 104.7
+                }
+            },
+            "troops": {
+                "infantry_t6": 30,
+                "lancer_t6": 100,
+                "marksman_t6": 3600
+            },
+            "heroes": {
+                "Alonso": {
+                    "skill_1": 1,
+                    "skill_2": 2
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 3729
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "MARKSMEN- Ranged Strike": "1"
+            },
+            "defender": {
+                "Alonso- Iron strength": "3",
+                "LANCERS- Charge": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            }
+        },
+        "game_report_result": {
+            "attacker": 0,
+            "defender": 3729
+        }
+    },
+    {
+        "test_id": "daut_viper_3",
+        "time": "2025-07-13 - 13:45",
+        "attacker": {
+            "name": "daut2x",
+            "stats": {
+                "inf": {
+                    "attack": 43.36,
+                    "defense": 42.86,
+                    "lethality": 7.13,
+                    "health": 7.13
+                },
+                "lanc": {
+                    "attack": 57.71,
+                    "defense": 57.21,
+                    "lethality": 1.8,
+                    "health": 1.8
+                },
+                "mark": {
+                    "attack": 61.36,
+                    "defense": 60.36,
+                    "lethality": 5.46,
+                    "health": 5.46
+                }
+            },
+            "troops": {
+                "infantry_t6": 8000,
+                "lancer_t6": 2500,
+                "marksman_t6": 7000
+            },
+            "heroes": {
+                "Jasser": {
+                    "skill_1": 2
+                },
+                "Sergey": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                },
+                "Molly": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper2x",
+            "stats": {
+                "inf": {
+                    "attack": 228.73,
+                    "defense": 228.23,
+                    "lethality": 107.2,
+                    "health": 114.2
+                },
+                "lanc": {
+                    "attack": 268.13,
+                    "defense": 260.13,
+                    "lethality": 110.3,
+                    "health": 100.2
+                },
+                "mark": {
+                    "attack": 228.27,
+                    "defense": 216.77,
+                    "lethality": 117.8,
+                    "health": 104.7
+                }
+            },
+            "troops": {
+                "infantry_t6": 2000,
+                "lancer_t6": 1000,
+                "marksman_t6": 1000
+            },
+            "heroes": {
+                "Natalia": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                },
+                "Patrick": {
+                    "skill_1": 2,
+                    "skill_2": 1
+                },
+                "Alonso": {
+                    "skill_1": 1,
+                    "skill_2": 2
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 2782
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Jasser- Tactical genius": "1",
+                "Sergey- Defender's edge": "1",
+                "Sergey- Weaken": "1",
+                "Molly- Calling of the storm": "3",
+                "Molly- Ice Dominion": "31 - Extra: 49.0",
+                "MARKSMEN- Ranged Strike": "1"
+            },
+            "defender": {
+                "Natalia- Wildling roar": "9",
+                "Natalia- Queen of the wild": "1",
+                "Patrick- Super nutrients": "1",
+                "Patrick- Caloric booster": "1",
+                "Alonso- Onslaught": "7",
+                "Alonso- Iron strength": "29",
+                "INFANTRY- Master Brawler": "1",
+                "LANCERS- Charge": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            }
+        },
+        "game_report_result": {
+            "attacker": 0,
+            "defender": 2823
+        }
+    },
+    {
+        "test_id": "daut_viper_4",
+        "time": "2025-07-13 - 16:51",
+        "attacker": {
+            "name": "daut2x",
+            "stats": {
+                "inf": {
+                    "attack": 43.36,
+                    "defense": 42.86,
+                    "lethality": 7.13,
+                    "health": 7.13
+                },
+                "lanc": {
+                    "attack": 43.36,
+                    "defense": 42.86,
+                    "lethality": 1.8,
+                    "health": 1.8
+                },
+                "mark": {
+                    "attack": 61.36,
+                    "defense": 60.36,
+                    "lethality": 5.46,
+                    "health": 5.46
+                }
+            },
+            "troops": {
+                "infantry_t6": 5000,
+                "lancer_t6": 2000,
+                "marksman_t6": 5000
+            },
+            "heroes": {
+                "Jasser": {
+                    "skill_1": 2
+                },
+                "Sergey": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                },
+                "Jessie": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper2x",
+            "stats": {
+                "inf": {
+                    "attack": 303.59,
+                    "defense": 303.09,
+                    "lethality": 112.53,
+                    "health": 132.56
+                },
+                "lanc": {
+                    "attack": 237.44,
+                    "defense": 229.44,
+                    "lethality": 110.3,
+                    "health": 100.2
+                },
+                "mark": {
+                    "attack": 288.57,
+                    "defense": 277.07,
+                    "lethality": 163.45,
+                    "health": 117.87
+                }
+            },
+            "troops": {
+                "infantry_t6": 500,
+                "lancer_t6": 200,
+                "marksman_t6": 300
+            },
+            "heroes": {
+                "Bahiti": {
+                    "skill_1": 5,
+                    "skill_2": 4
+                },
+                "Sergey": {
+                    "skill_1": 5,
+                    "skill_2": 5
+                },
+                "Lumak": {
+                    "skill_1": 1
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 592
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Jasser- Tactical genius": "1",
+                "Sergey- Defender's edge": "1",
+                "Sergey- Weaken": "1",
+                "Jessie- Stand of Arms": "1",
+                "Jessie- Bulwarks": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            },
+            "defender": {
+                "Bahiti- Sixth Sense": "1",
+                "Bahiti- Fluorescence": "145 - Extra: 2549.8",
+                "Sergey- Defender's edge": "1",
+                "Sergey- Weaken": "1",
+                "Lumak- Tactical Deception": "1",
+                "INFANTRY- Master Brawler": "1",
+                "LANCERS- Charge": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            }
+        },
+        "game_report_result": {
+            "attacker": 0,
+            "defender": 519
+        }
+    },
+    {
+        "test_id": "daut_viper_5",
+        "time": "2025-07-13 - 16:57",
+        "attacker": {
+            "name": "daut2x",
+            "heroes": {
+                "Jasser": {
+                    "skill_1": 2
+                },
+                "Sergey": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                },
+                "Jessie": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 5000,
+                "lancer_t6": 2000,
+                "marksman_t6": 5000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 43.36,
+                    "defense": 42.86,
+                    "lethality": 7.13,
+                    "health": 7.13
+                },
+                "lanc": {
+                    "attack": 43.36,
+                    "defense": 42.86,
+                    "lethality": 1.8,
+                    "health": 1.8
+                },
+                "mark": {
+                    "attack": 61.36,
+                    "defense": 60.36,
+                    "lethality": 5.46,
+                    "health": 5.46
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper2x",
+            "heroes": {
+                "Bahiti": {
+                    "skill_1": 5,
+                    "skill_2": 4
+                },
+                "Sergey": {
+                    "skill_1": 5,
+                    "skill_2": 5
+                },
+                "Lumak": {
+                    "skill_1": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 300,
+                "lancer_t6": 100,
+                "marksman_t6": 100
+            },
+            "stats": {
+                "inf": {
+                    "attack": 303.59,
+                    "defense": 303.09,
+                    "lethality": 112.53,
+                    "health": 132.56
+                },
+                "lanc": {
+                    "attack": 237.44,
+                    "defense": 229.44,
+                    "lethality": 110.3,
+                    "health": 100.2
+                },
+                "mark": {
+                    "attack": 288.57,
+                    "defense": 277.07,
+                    "lethality": 163.45,
+                    "health": 117.87
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 8881,
+            "defender": 0
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Jasser- Tactical genius": "1",
+                "Sergey- Defender's edge": "1",
+                "Sergey- Weaken": "1",
+                "Jessie- Stand of Arms": "1",
+                "Jessie- Bulwarks": "1",
+                "INFANTRY- Master Brawler": "1",
+                "LANCERS- Charge": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            },
+            "defender": {
+                "Bahiti- Sixth Sense": "1",
+                "Bahiti- Fluorescence": "132 - Extra: 632.0",
+                "Sergey- Defender's edge": "1",
+                "Sergey- Weaken": "1",
+                "Lumak- Tactical Deception": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            }
+        },
+        "game_report_result": {
+            "attacker": 9282,
+            "defender": 0
+        }
+    },
+    {
+        "test_id": "daut_viper_6",
+        "time": "2025-07-20 - 23:45",
+        "attacker": {
+            "name": "daut",
+            "heroes": {
+                "Seo-yoon": {
+                    "skill_1": 3
+                },
+                "Lumak": {
+                    "skill_1": 2
+                },
+                "Sergey": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 5000,
+                "lancer_t6": 2000,
+                "marksman_t6": 5000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 43.4,
+                    "defense": 42.9,
+                    "lethality": 7.08,
+                    "health": 7.08
+                },
+                "lanc": {
+                    "attack": 54.46,
+                    "defense": 53.96,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 58.17,
+                    "defense": 57.18,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper",
+            "heroes": {
+                "Ling": {
+                    "skill_1": 1
+                },
+                "Ahmose": {
+                    "skill_1": 1
+                },
+                "Zinman": {
+                    "skill_1": 1,
+                    "skill_3": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 800,
+                "lancer_t6": 500,
+                "marksman_t6": 300
+            },
+            "stats": {
+                "inf": {
+                    "attack": 239.9,
+                    "defense": 243.4,
+                    "lethality": 107.24,
+                    "health": 114.18
+                },
+                "lanc": {
+                    "attack": 227.64,
+                    "defense": 223.64,
+                    "lethality": 110.31,
+                    "health": 100.21
+                },
+                "mark": {
+                    "attack": 238.34,
+                    "defense": 231.84,
+                    "lethality": 117.75,
+                    "health": 104.74
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 5617,
+            "defender": 0
+        },
+        "sim_rounds": 74,
+        "sim_skills_used": {
+            "attacker": [
+                "Seo-yoon- Rallying Beat/1      :    1 (210)    (DamageUp)",
+                "Lumak- Tactical Deception/1    :    1 (198)    (OppDamageDown)",
+                "Sergey- Defender's edge/1      :    1 (198)    (DefenseUp)",
+                "Sergey- Weaken/1               :    1 (198)    (OppDamageDown)",
+                "INFANTRY- Master Brawler/1     :    1 (6)      (DamageUp)",
+                "LANCERS- Charge/1              :    1 (6)      (DamageUp)",
+                "MARKSMEN- Ranged Strike/1      :    1 (56)     (DamageUp)"
+            ],
+            "defender": [
+                "Ling- Fearsome aura/1          :    1 (210)    (OppDamageDown)",
+                "Ahmose- Viper formation/1      :    14 (0)     (DefenseUp)",
+                "Ahmose- Viper formation/2      :    14 (84)    (DefenseUp)",
+                "Zinman- Implacable/1           :    1 (210)    (DefenseUp)",
+                "Zinman- Implacable/2           :    1 (210)    (DefenseUp)",
+                "Zinman- Positional Battler/1   :    1 (198)    (DamageUp)",
+                "MARKSMEN- Ranged Strike/1      :    1 (62)     (DamageUp)"
+            ]
+        },
+        "game_report_result": [
+            {
+                "attacker": 5779,
+                "defender": 0
+            }
+        ]
+    },
+    {
+        "test_id": "daut_viper_7",
+        "time": "2025-07-13 - 17:03",
+        "attacker": {
+            "name": "daut2x",
+            "heroes": {
+                "Alonso": {
+                    "skill_1": 1,
+                    "skill_2": 1,
+                    "skill_3": 1
+                },
+                "Mia": {
+                    "skill_1": 1
+                },
+                "Logan": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 6000,
+                "lancer_t6": 2000,
+                "marksman_t6": 3000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 69.68,
+                    "defense": 69.18,
+                    "lethality": 1.8,
+                    "health": 1.8
+                },
+                "lanc": {
+                    "attack": 46.51,
+                    "defense": 46.01,
+                    "lethality": 1.8,
+                    "health": 1.8
+                },
+                "mark": {
+                    "attack": 86.72,
+                    "defense": 85.72,
+                    "lethality": 1.8,
+                    "health": 1.8
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper2x",
+            "heroes": {
+                "Hector": {
+                    "skill_1": 4,
+                    "skill_2": 3,
+                    "skill_3": 3
+                },
+                "Philly": {
+                    "skill_1": 1,
+                    "skill_2": 1
+                },
+                "Greg": {
+                    "skill_1": 1,
+                    "skill_2": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 500,
+                "lancer_t6": 1000,
+                "marksman_t6": 1000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 441.15,
+                    "defense": 440.65,
+                    "lethality": 127.53,
+                    "health": 232.63
+                },
+                "lanc": {
+                    "attack": 224.42,
+                    "defense": 216.42,
+                    "lethality": 110.3,
+                    "health": 100.2
+                },
+                "mark": {
+                    "attack": 248.12,
+                    "defense": 236.62,
+                    "lethality": 117.8,
+                    "health": 104.7
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 2304
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Alonso- Onslaught": "4",
+                "Alonso- Iron strength": "21",
+                "Alonso- Poison harpoon": "28 - Extra: 4.5",
+                "Mia- Bad luck streak": "31",
+                "Logan- Lion strike": "17 - Extra: 18.5",
+                "Logan- Lion intimidation": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            },
+            "defender": {
+                "Hector- Survival instincts": "16",
+                "Hector- Rampant": "2",
+                "Hector- Blitz": "1",
+                "Philly- Vigor tactics": "2",
+                "Philly- Dosage boost": "14 - Extra: 1704.2",
+                "Greg- Sword of justice": "3",
+                "Greg- Deterrence of law": "16",
+                "INFANTRY- Master Brawler": "1",
+                "LANCERS- Charge": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            }
+        },
+        "game_report_result": {
+            "attacker": 0,
+            "defender": 2295
+        }
+    },
+    {
+        "test_id": "daut_viper_8",
+        "time": "2025-07-13 - 17:06",
+        "attacker": {
+            "name": "daut2x",
+            "heroes": {
+                "Alonso": {
+                    "skill_1": 1,
+                    "skill_2": 1,
+                    "skill_3": 1
+                },
+                "Logan": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                },
+                "Molly": {
+                    "skill_1": 2,
+                    "skill_2": 2
+                }
+            },
+            "troops": {
+                "infantry_t6": 5000,
+                "lancer_t6": 2000,
+                "marksman_t6": 4000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 69.68,
+                    "defense": 69.18,
+                    "lethality": 1.8,
+                    "health": 1.8
+                },
+                "lanc": {
+                    "attack": 57.71,
+                    "defense": 57.21,
+                    "lethality": 1.8,
+                    "health": 1.8
+                },
+                "mark": {
+                    "attack": 86.72,
+                    "defense": 85.72,
+                    "lethality": 1.8,
+                    "health": 1.8
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper2x",
+            "heroes": {
+                "Flint": {
+                    "skill_1": 4,
+                    "skill_2": 4,
+                    "skill_3": 4
+                },
+                "Reina": {
+                    "skill_1": 1
+                },
+                "Zinman": {
+                    "skill_1": 1,
+                    "skill_3": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 500,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 316.87,
+                    "defense": 316.37,
+                    "lethality": 107.2,
+                    "health": 114.2
+                },
+                "lanc": {
+                    "attack": 217.71,
+                    "defense": 209.71,
+                    "lethality": 110.3,
+                    "health": 100.2
+                },
+                "mark": {
+                    "attack": 242.4,
+                    "defense": 230.9,
+                    "lethality": 117.8,
+                    "health": 104.7
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 883
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Alonso- Onslaught": "4",
+                "Alonso- Iron strength": "23",
+                "Alonso- Poison harpoon": "39 - Extra: 16.5",
+                "Logan- Lion strike": "17 - Extra: 37.9",
+                "Logan- Lion intimidation": "1",
+                "Molly- Calling of the storm": "11",
+                "Molly- Ice Dominion": "37 - Extra: 23.9",
+                "MARKSMEN- Ranged Strike": "1"
+            },
+            "defender": {
+                "Flint- Pyromaniac": "27",
+                "Flint- Burning resolve": "1",
+                "Flint- Immolation": "36",
+                "Reina- Assassin's instinct": "1",
+                "Zinman- Implacable": "2",
+                "Zinman- Positional Battler": "1",
+                "INFANTRY- Master Brawler": "1",
+                "LANCERS- Charge": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            }
+        },
+        "game_report_result": {
+            "attacker": 0,
+            "defender": 1013
+        }
+    },
+    {
+        "test_id": "daut_viper_9",
+        "time": "2025-07-13 - 17:09",
+        "attacker": {
+            "name": "daut2x",
+            "heroes": {
+                "Mia": {
+                    "skill_1": 1,
+                    "skill_2": 0,
+                    "skill_3": 0
+                },
+                "Alonso": {
+                    "skill_1": 1,
+                    "skill_2": 1,
+                    "skill_3": 1
+                },
+                "Logan": {
+                    "skill_1": 2,
+                    "skill_2": 2,
+                    "skill_3": 0
+                }
+            },
+            "troops": {
+                "infantry_t6": 500,
+                "lancer_t6": 2000,
+                "marksman_t6": 5000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 69.68,
+                    "defense": 69.18,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "lanc": {
+                    "attack": 46.61,
+                    "defense": 46.05,
+                    "lethality": 1.75,
+                    "health": 1.75
+                },
+                "mark": {
+                    "attack": 86.75,
+                    "defense": 85.75,
+                    "lethality": 1.75,
+                    "health": 1.75
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "viper2x",
+            "heroes": {
+                "Flint": {
+                    "skill_1": 4,
+                    "skill_2": 4,
+                    "skill_3": 4
+                },
+                "Reina": {
+                    "skill_1": 1,
+                    "skill_2": 2,
+                    "skill_3": 0
+                },
+                "Zinman": {
+                    "skill_1": 1,
+                    "skill_3": 1
+                }
+            },
+            "troops": {
+                "infantry_t6": 13,
+                "lancer_t6": 500,
+                "marksman_t6": 500
+            },
+            "stats": {
+                "inf": {
+                    "attack": 313.87,
+                    "defense": 317.37,
+                    "lethality": 107.2,
+                    "health": 114.2
+                },
+                "lanc": {
+                    "attack": 243.31,
+                    "defense": 239.31,
+                    "lethality": 110.3,
+                    "health": 100.2
+                },
+                "mark": {
+                    "attack": 238.3,
+                    "defense": 231.8,
+                    "lethality": 117.8,
+                    "health": 104.7
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 307
+        },
+        "sim_skills_used": {
+            "attacker": {
+                "Mia- Bad luck streak": "10",
+                "Alonso- Onslaught": "2",
+                "Alonso- Iron strength": "9",
+                "Alonso- Poison harpoon": "16 - Extra: 19.9",
+                "Logan- Lion strike": "6 - Extra: 42.6",
+                "Logan- Lion intimidation": "1",
+                "INFANTRY- Master Brawler": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            },
+            "defender": {
+                "Flint- Pyromaniac": "11",
+                "Flint- Burning resolve": "1",
+                "Flint- Immolation": "22",
+                "Reina- Assassin's instinct": "1",
+                "Zinman- Implacable": "2",
+                "Zinman- Positional Battler": "1",
+                "LANCERS- Charge": "1",
+                "MARKSMEN- Ranged Strike": "1"
+            }
+        },
+        "game_report_result": [
+            {
+                "attacker": 0,
+                "defender": 289
+            },
+            {
+                "attacker": 0,
+                "defender": 448
+            },
+            {
+                "attacker": 0,
+                "defender": 412
+            },
+            {
+                "attacker": 0,
+                "defender": 453
+            },
+            {
+                "attacker": 0,
+                "defender": 310
+            },
+            {
+                "attacker": 0,
+                "defender": 372
+            },
+            {
+                "attacker": 0,
+                "defender": 476
+            },
+            {
+                "attacker": 0,
+                "defender": 305
+            }
+        ]
+    }
+]
