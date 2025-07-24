@@ -58,14 +58,16 @@ class StatsBonus():
     def from_dict(_dict):
         _s = StatsBonus()
         for ut in UnitType :
-            _s.__setattr__(ut.name, Basic_stat_dict()._from_dict(_dict[ut.name]))
+            ut_name = [k for k in _dict.keys() if ut.name in k.lower()][0]
+            _s.__setattr__(ut.name, Basic_stat_dict()._from_dict(_dict[ut_name]))
         return _s
     
     @staticmethod
     def from_list(_dict):
         _s = StatsBonus()
         for ut in UnitType :
-            _s.__setattr__(ut.name, Basic_stat_dict()._from_list(_dict[ut.name]))
+            ut_name = [k for k in _dict.keys() if ut.name in k.lower()][0]
+            _s.__setattr__(ut.name, Basic_stat_dict()._from_list(_dict[ut_name]))
         return _s
     
     def add_bonus(self, type: UnitType, stat: str, value: float):

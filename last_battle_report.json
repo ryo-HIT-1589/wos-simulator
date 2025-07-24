@@ -1,95 +1,81 @@
 {
-    "time": "2025-07-21 - 01:18",
+    "time": "2025-07-22 - 06:39",
     "attacker": {
-        "name": "daut",
-        "heroes": {
-            "Jessie": {
-                "skill_1": 2,
-                "skill_2": 2
-            }
-        },
+        "name": "Nitro",
+        "heroes": {},
         "troops": {
-            "infantry_t6": 5000,
-            "lancer_t6": 3000,
-            "marksman_t6": 5000
+            "infantry_t10_fc5": 50000
         },
         "stats": {
             "inf": {
-                "attack": 9.94,
-                "defense": 9.44,
-                "lethality": 1.75,
-                "health": 1.75
+                "attack": 602.82,
+                "defense": 607.82,
+                "lethality": 420.22,
+                "health": 403.0
             },
             "lanc": {
-                "attack": 43.4,
-                "defense": 42.9,
-                "lethality": 1.75,
-                "health": 1.75
+                "attack": 557.32,
+                "defense": 554.32,
+                "lethality": 368.26,
+                "health": 360.39
             },
             "mark": {
-                "attack": 10.43,
-                "defense": 9.44,
-                "lethality": 1.75,
-                "health": 1.75
+                "attack": 557.32,
+                "defense": 564.82,
+                "lethality": 388.3,
+                "health": 372.94
             }
         },
         "joiner_heroes": {}
     },
     "defender": {
-        "name": "viper",
-        "heroes": {
-            "Hector": {
-                "skill_1": 4,
-                "skill_2": 3,
-                "skill_3": 3
-            }
-        },
+        "name": "Beast_30",
+        "heroes": {},
         "troops": {
-            "infantry_t6": 200,
-            "lancer_t6": 200,
-            "marksman_t6": 200
+            "infantry_t10": 6450,
+            "lancer_t10": 7525,
+            "lancer_t9": 30105,
+            "marksman_t10": 7525,
+            "marksman_t9": 30105
         },
         "stats": {
             "inf": {
-                "attack": 438.15,
-                "defense": 441.65,
-                "lethality": 127.57,
-                "health": 232.61
+                "attack": 455.0,
+                "defense": 455.0,
+                "lethality": 455.0,
+                "health": 455.0
             },
             "lanc": {
-                "attack": 167.0,
-                "defense": 163.0,
-                "lethality": 110.31,
-                "health": 100.21
+                "attack": 455.0,
+                "defense": 455.0,
+                "lethality": 455.0,
+                "health": 455.0
             },
             "mark": {
-                "attack": 174.75,
-                "defense": 168.25,
-                "lethality": 117.75,
-                "health": 104.74
+                "attack": 455.0,
+                "defense": 455.0,
+                "lethality": 455.0,
+                "health": 455.0
             }
         },
         "joiner_heroes": {}
     },
     "sim_result": {
-        "attacker": 8588,
-        "defender": 0
+        "attacker": 0,
+        "defender": 41906
     },
-    "sim_rounds": 82,
+    "sim_rounds": 96,
     "sim_skills_used": {
         "attacker": [
-            "Jessie- Stand of Arms/1        :    1 (246)    (DamageUp)",
-            "Jessie- Bulwarks/1             :    1 (226)    (DefenseUp)",
-            "INFANTRY- Master Brawler/1     :    1 (8)      (DamageUp)",
-            "LANCERS- Charge/1              :    1 (6)      (DamageUp)",
-            "MARKSMEN- Ranged Strike/1      :    1 (68)     (DamageUp)"
+            "INFANTRY- Master Brawler/1 (Lvl 1)      :  1 (67)               (DamageUp)",
+            "INFANTRY- Bands of Steel/1 (Lvl 1)      :  1 (96)               (DefenseUp)",
+            "INFANTRY- Crystal Shield/1 (Lvl 2)      :  75 (75)              (OppDamageDown)"
         ],
         "defender": [
-            "Hector- Survival instincts/1   :    26 (78)    (DefenseUp)",
-            "Hector- Rampant/1              :    1 (5)      (DamageUp)",
-            "Hector- Rampant/2              :    1 (5)      (DamageUp)",
-            "Hector- Blitz/1                :    55 (55) - Extra: 602.5 (DamageUp)",
-            "MARKSMEN- Ranged Strike/1      :    1 (82)     (DamageUp)"
+            "INFANTRY- Bands of Steel/1 (Lvl 1)      :  1 (0)                (DefenseUp)",
+            "LANCERS- Ambusher/1 (Lvl 1)             :  17 (17)              (attack_order)",
+            "MARKSMEN- Ranged Strike/1 (Lvl 1)       :  1 (96)               (DamageUp)",
+            "MARKSMEN- Volley/1 (Lvl 1)              :  8 (8) -Extra: 2786.7 (DamageUp)"
         ]
     }
 }

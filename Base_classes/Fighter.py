@@ -132,15 +132,16 @@ class Fighter:
 
     def _calc_troops_skills(self):
         _troop_skills_data = JsonUtil.troop_skills
-        for troop_name in self.troops:
-            for troop_skill in _troop_skills_data:
+        for troop_skill in _troop_skills_data:
+            level = 0
+            for troop_name in self.troops:
                 if _to_unitx(troop_name) == _to_unitx(troop_skill['skill_troop_type']):
                     troop = JsonUtil.troop_stats[troop_name]
-                    level = 0
                     for condition in troop_skill['skill_conditions']:
                         if troop[condition['condition_type']] >= condition['condition_value']:
                             level = max(level, int(condition['level']))
-                    if level : self.skills.append(Skill(troop_skill, level))
+            if level:
+                self.skills.append(Skill(troop_skill, level))
 
     def _calc_effects(self):
         for skill in self.skills:
@@ -166,6 +167,9 @@ class Fighter:
     @troops.setter
     def troops(self, troop_dict):
         for troop_name in troop_dict:
+            if troop_name not in JsonUtil.troop_stats:
+                print(f"⚠️  Error : no data found for troop '{troop_name}' (P.S: FC6+ troops are not yet supported)")
+                exit()
             if troop_dict[troop_name] > 0:
                 self._troops[troop_name] = troop_dict[troop_name]
 

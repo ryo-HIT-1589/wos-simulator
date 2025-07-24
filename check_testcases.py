@@ -111,7 +111,7 @@ def check_testcases(testcases_files, TESTCASES_PATH = 'testcases', max_diff_rati
             if combine_repeats:
                 file_prints[-1][-6] = round(statistics.fmean([(x[-6] if isinstance(x[-6], int) else 0) for x in tc_results]),1) or '-'
                 file_prints[-1][-5] = round(statistics.fmean([(x[-5] if isinstance(x[-5], int) else 0) for x in tc_results]),1) or '-'
-                file_prints[-1][-3] = round(statistics.fmean([(x[-3] if isinstance(x[-3], float) else 0) for x in tc_results]),1) or '-'
+                file_prints[-1][-3] = round(statistics.fmean([(x[-3] if (isinstance(x[-3], float) or isinstance(x[-3], int)) else 0) for x in tc_results]),1) or '-'
                 tc_ratio_avg = round(statistics.fmean([(x[-2] if isinstance(x[-2], float) else 0) for x in tc_results]),2)
                 file_prints[-1][-2] = tc_ratio_avg or '-'
                 file_prints[-1][-1] = "✅" if tc_ratio_avg <= (max_diff_ratio * 100) else "❌"
@@ -135,10 +135,14 @@ def check_testcases(testcases_files, TESTCASES_PATH = 'testcases', max_diff_rati
 
 if __name__ == '__main__':
     
-    files = "all"
+    # files = "all"
+
     # files = ["2-testcases_no-heroes_t6_mixed_nc.json"]
+    files =["4-testcases_no-heroes_infantry_fc5.json"]
+
     # files = ["3-testcases_mixed-heroes-not-verified.json"]
-    # files = ["heroes_unittests/Flint_tc.json"]
+    
+    # files = ["heroes_unittests/Mia_tc.json"]
     # files = ["heroes_unittests/Alonso_tc.json",
     #          "heroes_unittests/Jessie_tc_nc.json"]
     # files = ["heroes_unittests/Mia_tc.json", "3-testcases_mixed-heroes-not-verified.json"]
@@ -146,7 +150,7 @@ if __name__ == '__main__':
     check_testcases(files,
                     max_diff_ratio      =   0.05,
                     repeat              =   100,
-                    combine_repeats     =   True,
+                    combine_repeats     =   False,
                     max_repeat_print    =   5,
                     ignore_one_diff     =   True)
     

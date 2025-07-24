@@ -67,7 +67,6 @@ class BattleRound():
         self.calc_stunned()
         self.calc_round_effects()
         self.calc_targets()
-        self.calc_benefits()
 
     def calc_round_effects(self):
         for effect in self.fighter.effects:
@@ -103,14 +102,28 @@ class BattleRound():
             if self.opponent.rounds[self.round_idx].round_troops[vs] > 0 : return vs
         
     def calc_benefits(self):
+        defense_effects = []
         for r_effect in self.round_effects:
             r_effect : RoundEffect
+            if ('onDefense' in r_effect._effect.special) and r_effect._effect.special['onDefense'] :
+                defense_effects.append(r_effect)
+                continue
             for ut in UnitType:
                 if not self.round_troops[ut]: continue
                 ## PROBABLY NOT: ## if self.stunned[ut]: continue ## To check
                 target = self.targets[ut]
                 if r_effect.trigger_condition(self.fighter, self.opponent, ut, target, self.round_idx):
                     benefit = r_effect.activate_effect(self.fighter, ut, target)
+                    self.round_benefits.append(benefit)
+        
+        for r_effect in defense_effects:
+            r_effect : RoundEffect
+            for vs in UnitType:
+                if not self.opponent.rounds[self.round_idx].round_troops[vs]: continue
+                victim = self.opponent.rounds[self.round_idx].targets[vs]
+                if r_effect.trigger_condition(self.fighter, self.opponent, victim, vs, self.round_idx):
+                    benefit = r_effect.activate_effect(self.fighter, victim, vs)
+                    # print(f"___ (R{self.round_idx}-{self.fighter.name}) DEBUG: r_effect onDefense: {r_effect.r_eff_id} ACTIVATED for my {victim.name} vs {vs.name}, defense_effects = {defense_effects}")
                     self.round_benefits.append(benefit)
         
         if self.round_idx > 0:

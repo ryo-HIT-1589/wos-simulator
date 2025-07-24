@@ -1,0 +1,137 @@
+[
+    {
+        "test_id": "Nitro_Beast_30_1",
+        "time": "2025-07-22 - 06:24",
+        "attacker": {
+            "name": "Nitro",
+            "heroes": {},
+            "troops": {
+                "infantry_t10_fc5": 50000
+            },
+            "stats": {
+                "inf": {
+                    "attack": 602.82,
+                    "defense": 607.82,
+                    "lethality": 420.22,
+                    "health": 403.0
+                },
+                "lanc": {
+                    "attack": 557.32,
+                    "defense": 554.32,
+                    "lethality": 368.26,
+                    "health": 360.39
+                },
+                "mark": {
+                    "attack": 557.32,
+                    "defense": 564.82,
+                    "lethality": 388.3,
+                    "health": 372.94
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "defender": {
+            "name": "Beast_30",
+            "heroes": {},
+            "troops": {
+                "infantry_t10": 6450,
+                "lancer_t10": 7525,
+                "lancer_t9": 30105,
+                "marksman_t10": 7525,
+                "marksman_t9": 30105
+            },
+            "stats": {
+                "inf": {
+                    "attack": 455.0,
+                    "defense": 455.0,
+                    "lethality": 455.0,
+                    "health": 455.0
+                },
+                "lanc": {
+                    "attack": 455.0,
+                    "defense": 455.0,
+                    "lethality": 455.0,
+                    "health": 455.0
+                },
+                "mark": {
+                    "attack": 455.0,
+                    "defense": 455.0,
+                    "lethality": 455.0,
+                    "health": 455.0
+                }
+            },
+            "joiner_heroes": {}
+        },
+        "sim_result": {
+            "attacker": 0,
+            "defender": 42586
+        },
+        "sim_rounds": 96,
+        "sim_skills_used": {
+            "attacker": [
+                "INFANTRY- Master Brawler/1 (Lvl 1)      :  1 (67)               (DamageUp)",
+                "INFANTRY- Bands of Steel/1 (Lvl 1)      :  1 (67)               (DefenseUp)",
+                "INFANTRY- Crystal Shield/1 (Lvl 2)      :  95 (95)              (OppDamageDown)"
+            ],
+            "defender": [
+                "LANCERS- Ambusher/1 (Lvl 1)             :  17 (17)              (attack_order)",
+                "MARKSMEN- Ranged Strike/1 (Lvl 1)       :  1 (96)               (DamageUp)",
+                "MARKSMEN- Volley/1 (Lvl 1)              :  11 (11) -Extra: 3831.7 (DamageUp)"
+            ]
+        },
+        "game_report_result": [
+            {
+                "attacker": 0,
+                "defender": 45772
+            },
+            {
+                "attacker": 0,
+                "defender": 42784
+            },
+            {
+                "attacker": 0,
+                "defender": 44207
+            },
+            {
+                "attacker": 0,
+                "defender": 47019
+            },
+            {
+                "attacker": 0,
+                "defender": 46631
+            },
+            {
+                "attacker": 0,
+                "defender": 44760
+            },
+            {
+                "attacker": 0,
+                "defender": 47180
+            },
+            {
+                "attacker": 0,
+                "defender": 44639
+            },
+            {
+                "attacker": 0,
+                "defender": 46574
+            },
+            {
+                "attacker": 0,
+                "defender": 45094
+            },
+            {
+                "attacker": 0,
+                "defender": 45641
+            },
+            {
+                "attacker": 0,
+                "defender": 45844
+            },
+            {
+                "attacker": 0,
+                "defender": 42118
+            }
+        ]
+    }
+]

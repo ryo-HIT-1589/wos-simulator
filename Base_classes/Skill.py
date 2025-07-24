@@ -114,10 +114,10 @@ class Effect():
         return True
     
     def get_report(self):
-        skill_name = f"{self._skill.skill_hero or self._skill.skill_troop_type.upper()}- {self.name}"
-        skill_data = f"{self.trigger_count} ({self.uses_count}){f' - Extra: {self.extra_kills:.1f}' if self.extra_kills else ''}"
+        skill_name = f"{self._skill.skill_hero or self._skill.skill_troop_type.upper()}- {self.name} (Lvl {self.level})"
+        skill_data = f"{self.trigger_count} ({self.uses_count}){f' -Extra: {self.extra_kills:.1f}' if self.extra_kills else ''}"
         skill_type = f"({self.type})"
-        return f"{skill_name} {' '* max(0,30-len(skill_name))}:    {skill_data}{' '*max(0,10-len(skill_data))} {skill_type}"
+        return f"{skill_name}{' '* max(0,40-len(skill_name))}:  {skill_data}{' '*max(0,20-len(skill_data))} {skill_type}"
 
 
 class RoundEffect:
@@ -138,7 +138,7 @@ class RoundEffect:
         # Already activated in round for unit, unless stackable in the same round
         if self.activated_in_round and (self._effect.trig_for_unit == 'once'): return False
         # attack frequency
-        if not self._effect.is_permanent and 'attack' in self._effect.frequency['frequency_type']:
+        if (not self._effect.is_permanent) and ('attack' in self._effect.frequency['frequency_type']):
             if fighter.cumul_attacks[ut] % self._effect.frequency['frequency_value'] != 0 : return False
         
         # check if could be triggered by unit

@@ -52,6 +52,10 @@ class Fight:
             self.attacker.rounds[round_idx].calc_skills()
             self.defender.rounds[round_idx].calc_skills()
 
+            # Calc benefits
+            self.attacker.rounds[round_idx].calc_benefits()
+            self.defender.rounds[round_idx].calc_benefits()
+
             # Get results
             self.attacker.rounds[round_idx].get_results()
             self.defender.rounds[round_idx].get_results()
@@ -140,14 +144,14 @@ class Fight:
     def format_report(self):
         report = self.battle_report()
         att_is_winner = report['sim_result']['attacker'] > 0 
-        headers = [f'ATTACKER ({report['attacker']['name']})    '+ ('✅' if att_is_winner else '❌'), '✦✦✦✦', f'DEFENDER ({report['defender']['name']})     ' + ('❌' if att_is_winner else '✅')]
+        headers = [f"ATTACKER ({report['attacker']['name']})    "+ ('✅' if att_is_winner else '❌'), '✦✦✦✦', f"DEFENDER ({report['defender']['name']})     " + ('❌' if att_is_winner else '✅')]
         lines= []
         # lines.append(['-',report['time'],'-'])
         for key in ['heroes', 'troops','stats']:
             # lines.append(['', key.upper(),''])
             lines.append([json.dumps(report['attacker'][key],indent=4) , key.upper(), json.dumps(report['defender'][key],indent=4)])
         lines.append(['✅' if att_is_winner else '❌','RESULT','❌' if att_is_winner else '✅'])
-        lines.append([report['sim_result']['attacker'], f'{report['sim_rounds']} rounds', report['sim_result']['defender']])
+        lines.append([report['sim_result']['attacker'], f"{report['sim_rounds']} rounds", report['sim_result']['defender']])
         lines.append(['\n'.join(report['sim_skills_used']['attacker']), 'SKILLS REPORT', '\n'.join(report['sim_skills_used']['defender'])])
         print(tabulate(lines, headers=headers, tablefmt="fancy_grid", colalign=("left", "center", "left")))
 

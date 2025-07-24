@@ -20,10 +20,10 @@ JsonUtil.load_fighters_data(
 # ATTACKER DATA
 ###############################################
 
-attacker_name = "daut"
+attacker_name = "Nitro"
 attacker = Fighter(attacker_name)
 
-attacker.heroes = ["Jessie"]  #["Jessie", "Sergey", "Molly"]      # if this format is used, skill levels are fetched at 'fighter_heroes.json'; Level 5 if not found
+# attacker.heroes = ["Sergey"]  #["Jessie", "Sergey", "Molly"]      # if this format is used, skill levels are fetched at 'fighter_heroes.json'; Level 5 if not found
 
 ### OR you can specify skill levels by using:
 # attacker.heroes = {
@@ -34,14 +34,14 @@ attacker.heroes = ["Jessie"]  #["Jessie", "Sergey", "Molly"]      # if this form
 # }
 
 attacker.troops = {
-    "infantry_t6" : 5000,
-    "lancer_t6" : 3000,
-    "marksman_t6" : 5000
+    "infantry_t10_fc5" : 50000,
+    "lancer_t10_fc5" : 0,
+    "marksman_t10_fc5" : 0
 }
 
 ### Add heroes stats. # If this is used, hero stats are added. All heroes stats should be specified in 'fighters_heroes.json'
 ### Use only if heroes stats are not included in fighters_data/fighter_stats.json
-attacker.add_heroes_stats()           
+# attacker.add_heroes_stats()           
 
 
 # attacker.joiner_heroes = ['Jessie', 'Jasser', 'mOLLY', "mia"]   ## If this form is used, all joiners first skill are considered at level 5
@@ -50,18 +50,21 @@ attacker.add_heroes_stats()
 # DEFENDER DATA
 ###############################################
 
-defender = Fighter("viper")
+defender = Fighter("Beast_30")
 
-defender.heroes = ["Hector"] # ["Flint", "Patrick", "Seo-yoon"]     
+# defender.heroes = ["Hector"] # ["Flint", "Patrick", "Seo-yoon"]     
 
 defender.troops = {
-    "infantry_t6" : 200,
-    "lancer_t6" : 200,
-    "marksman_t6" : 200
+    "infantry_t10"   : 6450,
+    "lancer_t10"     : 7525,
+    "lancer_t9"      : 30105,
+    "marksman_t10"   : 7525,
+    "marksman_t9"    : 30105
+	
 }
 
 
-defender.add_heroes_stats()           
+# defender.add_heroes_stats()           
 
 # defender.joiner_heroes = ['Jessie', 'Jasser', 'Molly', "mia"]   
 
@@ -70,9 +73,9 @@ defender.add_heroes_stats()
 ### BATTLE & Print results
 ###############################################
 
-BattleRound.DEBUG = False
+BattleRound.DEBUG = True
 f = Fight(attacker, defender)
-f.battle(show_rounds_freq = 10)
+f.battle(show_rounds_freq = 1)
 
 f.format_report()
 
@@ -82,8 +85,8 @@ f.format_report()
 ###############################################
 
 # f.save_testcase(
-#     file = "heroes_unittests/Hector_tc.json",                 #"3-testcases_mixed-heroes-not-verified.json", # "heroes_unittests/Jessie_tc_nc.json",
+#     file = "4-testcases_no-heroes_fc_mixed",                 #"3-testcases_mixed-heroes-not-verified.json", # "heroes_unittests/Jessie_tc_nc.json",
 #     result = [{
-#         "attacker": 1972,
-#         "defender": 0
+#         "attacker": 0,
+#         "defender": 45772
 #     }])

@@ -27,7 +27,6 @@
                 "effect_type": "DamageUp",
                 "effect_op": 101,
                 "extra_attack": false,
-                "effect_unit_stackable": false,
                 "effect_is_chance": false,
                 "effect_probabilities": {},
                 "special": {},
@@ -39,110 +38,6 @@
                 "benefit_types": {
                     "benefit_for": "infantry",
                     "benefit_vs": "lancer"
-                },
-                "effect_duration": {
-                    "duration_type": "turn",
-                    "duration_value": -1,
-                    "effect_lag": 0
-                },
-                "effect_values": {
-                    "1": 10
-                }
-            }
-        ]
-    },
-    {
-        "skill_name": "Charge",
-        "skill_decription": "Increase Attack Damage to Marksmen by 10%",
-        "skill_type": "troop_skill",
-        "skill_troop_type": "lancers",
-        "skill_permanent": true,
-        "skill_frequency": {
-            "frequency_type": null,
-            "frequency_value": 0
-        },
-        "skill_is_chance": false,
-        "skill_probability": 0.0,
-        "skill_round_stackable": false,
-        "skill_type_relation": 0,
-        "skill_conditions": [
-            {
-                "level": "1",
-                "condition_type": "tier",
-                "condition_value": 0
-            }
-        ],
-        "skill_order": 1,
-        "skill_effects": [
-            {
-                "affects_opponent": false,
-                "effect_type": "DamageUp",
-                "effect_op": 101,
-                "extra_attack": false,
-                "effect_unit_stackable": false,
-                "effect_is_chance": false,
-                "effect_probabilities": {},
-                "special": {},
-                "effect_num": "Charge/1",
-                "trigger_types": {
-                    "trigger_for": "lancer",
-                    "trigger_vs": "marksmen"
-                },
-                "benefit_types": {
-                    "benefit_for": "lancer",
-                    "benefit_vs": "marksmen"
-                },
-                "effect_duration": {
-                    "duration_type": "turn",
-                    "duration_value": -1,
-                    "effect_lag": 0
-                },
-                "effect_values": {
-                    "1": 10
-                }
-            }
-        ]
-    },
-    {
-        "skill_name": "Ranged Strike",
-        "skill_decription": "Increase Attack Damage to Infantry by 10%",
-        "skill_type": "troop_skill",
-        "skill_troop_type": "marksmen",
-        "skill_permanent": true,
-        "skill_frequency": {
-            "frequency_type": null,
-            "frequency_value": 0
-        },
-        "skill_is_chance": false,
-        "skill_probability": 0.0,
-        "skill_round_stackable": false,
-        "skill_type_relation": 0,
-        "skill_conditions": [
-            {
-                "level": "1",
-                "condition_type": "tier",
-                "condition_value": 0
-            }
-        ],
-        "skill_order": 1,
-        "skill_effects": [
-            {
-                "affects_opponent": false,
-                "effect_type": "DamageUp",
-                "effect_op": 101,
-                "extra_attack": false,
-                "effect_unit_stackable": false,
-                "effect_is_chance": false,
-                "effect_probabilities": {},
-                "special": {},
-                "effect_num": "Ranged Strike/1",
-                "trigger_types": {
-                    "trigger_for": "marksmen",
-                    "trigger_vs": "infantry"
-                },
-                "benefit_types": {
-                    "benefit_for": "marksmen",
-                    "benefit_vs": "infantry"
                 },
                 "effect_duration": {
                     "duration_type": "turn",
@@ -183,18 +78,210 @@
                 "effect_type": "DefenseUp",
                 "effect_op": 111,
                 "extra_attack": false,
-                "effect_unit_stackable": false,
                 "effect_is_chance": false,
                 "effect_probabilities": {},
                 "special": {},
                 "effect_num": "Bands of Steel/1",
                 "trigger_types": {
                     "trigger_for": "infantry",
-                    "trigger_vs": "lancer"
+                    "trigger_vs": "all"
                 },
                 "benefit_types": {
                     "benefit_for": "infantry",
                     "benefit_vs": "lancer"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_values": {
+                    "1": 10
+                }
+            }
+        ]
+    },
+    {
+        "skill_name": "Crystal Shield",
+        "skill_decription": "The Fire Crystal energy...grants it an X% chance of offsetting 36 damage",
+        "skill_type": "troop_skill",
+        "skill_troop_type": "infantry",
+        "skill_permanent": false,
+        "skill_frequency": {
+            "frequency_type": "turn",
+            "frequency_value": 1
+        },
+        "skill_is_chance": false,
+        "skill_probability": 0.0,
+        "skill_round_stackable": false,
+        "skill_type_relation": true,
+        "skill_conditions": [
+            {
+                "level": "1",
+                "condition_type": "fc",
+                "condition_value": 3
+            },
+            {
+                "level": "2",
+                "condition_type": "fc",
+                "condition_value": 5
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "OppDamageDown",
+                "effect_op": 209,
+                "extra_attack": false,
+                "effect_is_chance": true,
+                "effect_num": "Crystal Shield/1",
+                "special": {
+                    "onDefense": true
+                },
+                "trigger_types": {
+                    "trigger_for": "infantry",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "trigger",
+                    "benefit_vs": "target"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {
+                    "1": 25,
+                    "2": 37.5
+                },
+                "effect_values": {
+                    "1": 36,
+                    "2": 36
+                }
+            }
+        ]
+    },
+    {
+        "skill_name": "Body of Light",
+        "skill_decription": "Increasing Infantry Defense by 4%, reducing an extra 10% damage when [Crystal Shield] is active",
+        "skill_type": "troop_skill",
+        "skill_troop_type": "infantry",
+        "skill_permanent": true,
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_is_chance": false,
+        "skill_probability": 0.0,
+        "skill_round_stackable": false,
+        "skill_type_relation": true,
+        "skill_conditions": [
+            {
+                "level": "1",
+                "condition_type": "fc",
+                "condition_value": 8
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DefenseUp",
+                "effect_op": 119,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Body of Light/1",
+                "special": {},
+                "trigger_types": {
+                    "trigger_for": "infantry",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "infantry",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 4
+                }
+            },
+            {
+                "affects_opponent": true,
+                "effect_type": "OppDamageDown",
+                "effect_op": 209,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_num": "Body of Light/2",
+                "trigger_types": {
+                    "trigger_for": "infantry",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "infantry",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_probabilities": {},
+                "effect_values": {
+                    "1": 10
+                },
+                "special": {
+                    "effect_entanglment": "Crystal Shield/1"
+                }
+            }
+        ]
+    },
+
+    {
+        "skill_name": "Charge",
+        "skill_decription": "Increase Attack Damage to Marksmen by 10%",
+        "skill_type": "troop_skill",
+        "skill_troop_type": "lancers",
+        "skill_permanent": true,
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_is_chance": false,
+        "skill_probability": 0.0,
+        "skill_round_stackable": false,
+        "skill_type_relation": 0,
+        "skill_conditions": [
+            {
+                "level": "1",
+                "condition_type": "tier",
+                "condition_value": 0
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_probabilities": {},
+                "special": {},
+                "effect_num": "Charge/1",
+                "trigger_types": {
+                    "trigger_for": "lancer",
+                    "trigger_vs": "marksmen"
+                },
+                "benefit_types": {
+                    "benefit_for": "lancer",
+                    "benefit_vs": "marksmen"
                 },
                 "effect_duration": {
                     "duration_type": "turn",
@@ -235,7 +322,6 @@
                 "effect_type": "attack_order",
                 "effect_op": "",
                 "extra_attack": false,
-                "effect_unit_stackable": false,
                 "effect_is_chance": true,
                 "effect_probabilities": {
                     "1": 20
@@ -257,6 +343,173 @@
                 },
                 "effect_values": {
                     "1": "mark/inf/lanc"
+                }
+            }
+        ]
+    },
+    {
+        "skill_name": "Crystal Lance",
+        "skill_decription": "Grants it a X% chance of dealing double damage",
+        "skill_type": "troop_skill",
+        "skill_troop_type": "lancers",
+        "skill_permanent": false,
+        "skill_frequency": {
+            "frequency_type": "turn",
+            "frequency_value": 1
+        },
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": true,
+        "skill_conditions": [
+            {
+                "level": "1",
+                "condition_type": "fc",
+                "condition_value": 3
+            },
+            {
+                "level": "2",
+                "condition_type": "fc",
+                "condition_value": 5
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": true,
+                "effect_is_chance": true,
+                "effect_probabilities": {
+                    "1": 10,
+                    "2": 15
+                },
+                "special": {},
+                "effect_num": "Crystal Lance/1",
+                "trigger_types": {
+                    "trigger_for": "lancer",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "lancer",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_values": {
+                    "1": 100,
+                    "2": 100
+                }
+            }
+        ]
+    },
+    {
+        "skill_name": "Incandescent Field",
+        "skill_decription": "Grants the lancers a 10% chance of taking half the damage when under attack.",
+        "skill_type": "troop_skill",
+        "skill_troop_type": "lancers",
+        "skill_permanent": false,
+        "skill_frequency": {
+            "frequency_type": "turn",
+            "frequency_value": 1
+        },
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": true,
+        "skill_conditions": [
+            {
+                "level": "1",
+                "condition_type": "fc",
+                "condition_value": 8
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "affects_opponent": true,
+                "effect_type": "OppDamageDown",
+                "effect_op": 209,
+                "extra_attack": false,
+                "effect_is_chance": true,
+                "effect_probabilities": {
+                    "1": 10
+                },
+                "special": {
+                    "onDefense": true
+                },
+                "effect_num": "Crystal Lance/1",
+                "trigger_types": {
+                    "trigger_for": "lancer",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "trigger",
+                    "benefit_vs": "target"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_values": {
+                    "1": 50
+                }
+            }
+        ]
+    },
+
+    {
+        "skill_name": "Ranged Strike",
+        "skill_decription": "Increase Attack Damage to Infantry by 10%",
+        "skill_type": "troop_skill",
+        "skill_troop_type": "marksmen",
+        "skill_permanent": true,
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_is_chance": false,
+        "skill_probability": 0.0,
+        "skill_round_stackable": false,
+        "skill_type_relation": 0,
+        "skill_conditions": [
+            {
+                "level": "1",
+                "condition_type": "tier",
+                "condition_value": 0
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_probabilities": {},
+                "special": {},
+                "effect_num": "Ranged Strike/1",
+                "trigger_types": {
+                    "trigger_for": "marksmen",
+                    "trigger_vs": "infantry"
+                },
+                "benefit_types": {
+                    "benefit_for": "marksmen",
+                    "benefit_vs": "infantry"
+                },
+                "effect_duration": {
+                    "duration_type": "turn",
+                    "duration_value": -1,
+                    "effect_lag": 0
+                },
+                "effect_values": {
+                    "1": 10
                 }
             }
         ]
@@ -289,7 +542,6 @@
                 "effect_type": "DamageUp",
                 "effect_op": 101,
                 "extra_attack": true,
-                "effect_unit_stackable": false,
                 "effect_is_chance": true,
                 "effect_probabilities": {
                     "1": 10
@@ -311,6 +563,145 @@
                 },
                 "effect_values": {
                     "1": 100
+                }
+            }
+        ]
+    },
+    {
+        "skill_name": "Crystal Gunpowder",
+        "skill_decription": "Grants it a X% chance of dealing 50% more damage",
+        "skill_type": "troop_skill",
+        "skill_troop_type": "marksmen",
+        "skill_permanent": false,
+        "skill_frequency": {
+            "frequency_type": "turn",
+            "frequency_value": 1
+        },
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": 0,
+        "skill_conditions": [
+            {
+                "level": "1",
+                "condition_type": "fc",
+                "condition_value": 3
+            },
+            {
+                "level": "2",
+                "condition_type": "fc",
+                "condition_value": 5
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": true,
+                "effect_is_chance": true,
+                "effect_probabilities": {
+                    "1": 20,
+                    "2": 30
+                },
+                "special": {},
+                "effect_num": "Crystal Gunpowder/1",
+                "trigger_types": {
+                    "trigger_for": "marksmen",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "marksmen",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_values": {
+                    "1": 50,
+                    "2": 50
+                }
+            }
+        ]
+    },
+    {
+        "skill_name": "Flame Charge",
+        "skill_decription": "Increasing marksmen's basic Attack by 4%. Marksmen can deal an extra 25% damage when [Crystal Gunpowder] is active",
+        "skill_type": "troop_skill",
+        "skill_troop_type": "marksmen",
+        "skill_permanent": true,
+        "skill_frequency": {
+            "frequency_type": null,
+            "frequency_value": 0
+        },
+        "skill_is_chance": false,
+        "skill_probability": 0,
+        "skill_round_stackable": false,
+        "skill_type_relation": 0,
+        "skill_conditions": [
+            {
+                "level": "1",
+                "condition_type": "fc",
+                "condition_value": 8
+            }
+        ],
+        "skill_order": 1,
+        "skill_effects": [
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 102,
+                "extra_attack": false,
+                "effect_is_chance": false,
+                "effect_probabilities": {},
+                "special": {},
+                "effect_num": "Flame Charge/1",
+                "trigger_types": {
+                    "trigger_for": "marksmen",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "marksmen",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_values": {
+                    "1": 4
+                }
+            },
+            {
+                "affects_opponent": false,
+                "effect_type": "DamageUp",
+                "effect_op": 101,
+                "extra_attack": true,
+                "effect_is_chance": false,
+                "effect_probabilities": {},
+                "effect_num": "Crystal Gunpowder/2",
+                "trigger_types": {
+                    "trigger_for": "marksmen",
+                    "trigger_vs": "all"
+                },
+                "benefit_types": {
+                    "benefit_for": "marksmen",
+                    "benefit_vs": "all"
+                },
+                "effect_duration": {
+                    "duration_type": "attack",
+                    "duration_value": 1,
+                    "effect_lag": 0
+                },
+                "effect_values": {
+                    "1": 25
+                },
+                "special": {
+                    "effect_entanglment": "Crystal Gunpowder/1"
                 }
             }
         ]
